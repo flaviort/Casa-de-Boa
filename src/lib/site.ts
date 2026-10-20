@@ -16,3 +16,6 @@ export const SITE = {
 export function absoluteUrl(path: string): string {
 	return new URL(path, SITE.url).toString()
 }
+
+// stage and preview deployments must stay out of search results
+export const isProduction = () => process.env.VERCEL_ENV === 'production'

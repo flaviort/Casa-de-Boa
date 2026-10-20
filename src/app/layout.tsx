@@ -9,7 +9,7 @@ import Sidebar, { Profile, SidebarContent } from '@/components/Sidebar'
 
 // utils
 import { organizationJsonLd, pageMetadata, websiteJsonLd } from '@/lib/seo'
-import { SITE } from '@/lib/site'
+import { isProduction, SITE } from '@/lib/site'
 
 import '@/assets/css/global.css'
 
@@ -22,7 +22,8 @@ export const metadata: Metadata = {
 	...pageMetadata({ description: 'Achados da Shopee pra casa, escolhidos a dedo: campeões de vendas e bem avaliados, com o link de cada um.', path: '/' }),
 	metadataBase: new URL(SITE.url),
 	title: { default: `${SITE.name} | ${SITE.tagline}`, template: `%s | ${SITE.name}` },
-	applicationName: SITE.name
+	applicationName: SITE.name,
+	...(!isProduction() && { robots: { index: false, follow: false } })
 }
 
 export const viewport: Viewport = {
