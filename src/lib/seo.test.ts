@@ -3,6 +3,9 @@ import { articleJsonLd, breadcrumbJsonLd, itemListJsonLd, organizationJsonLd, pa
 import { PostSchema } from './posts/schema'
 import { makePost } from './posts/__fixtures__/post'
 
+// JSON-LD objects are untyped schema.org shapes; tests read nested fields freely
+type Json = Record<string, any> // eslint-disable-line @typescript-eslint/no-explicit-any
+
 const post = PostSchema.parse(makePost({
 	seoTitle: 'Achados pra cozinha',
 	products: [
@@ -61,7 +64,7 @@ describe('postMetadata', () => {
 
 describe('articleJsonLd', () => {
 	it('dates the article and names the publisher', () => {
-		const article = articleJsonLd(post) as Record<string, any>
+		const article = articleJsonLd(post) as Json
 		expect(article['@type']).toBe('BlogPosting')
 		expect(article.datePublished).toBe(post.publishAt)
 		expect(article.publisher.name).toBe('Casa de Boa')
@@ -71,7 +74,7 @@ describe('articleJsonLd', () => {
 
 describe('itemListJsonLd', () => {
 	it('lists each product in order', () => {
-		const list = itemListJsonLd(post) as Record<string, any>
+		const list = itemListJsonLd(post) as Json
 		expect(list['@type']).toBe('ItemList')
 		expect(list.itemListElement).toEqual([
 			expect.objectContaining({ '@type': 'ListItem', position: 1, name: 'Chaleira', url: 'https://s.shopee.com.br/A' }),
@@ -82,7 +85,7 @@ describe('itemListJsonLd', () => {
 
 describe('breadcrumbJsonLd', () => {
 	it('builds absolute item urls', () => {
-		const crumbs = breadcrumbJsonLd([{ name: 'Início', path: '/' }, { name: 'Cozinha', path: '/categoria/cozinha' }]) as Record<string, any>
+		const crumbs = breadcrumbJsonLd([{ name: 'Início', path: '/' }, { name: 'Cozinha', path: '/categoria/cozinha' }]) as Json
 		expect(crumbs.itemListElement[1]).toEqual({ '@type': 'ListItem', position: 2, name: 'Cozinha', item: 'https://casadeboa.com.br/categoria/cozinha' })
 	})
 })
