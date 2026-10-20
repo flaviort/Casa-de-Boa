@@ -17,7 +17,7 @@ export function pageMetadata(opts: { title?: string; description: string; path: 
 	return {
 		title: opts.title,
 		description: opts.description,
-		alternates: { canonical: url },
+		alternates: { canonical: url, types: { 'application/rss+xml': [{ url: absoluteUrl('/feed.xml'), title: `${SITE.name} | ${SITE.tagline}` }] } },
 		openGraph: {
 			type: opts.type ?? 'website',
 			url,

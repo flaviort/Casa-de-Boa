@@ -47,6 +47,11 @@ describe('pageMetadata', () => {
 		expect(JSON.stringify(meta.openGraph?.images)).toContain('/og.jpg')
 	})
 
+	it('links the RSS feed on every page', () => {
+		const meta = pageMetadata({ description: 'x', path: '/sobre' })
+		expect(JSON.stringify(meta.alternates?.types)).toContain('/feed.xml')
+	})
+
 	it('leaves the title to the layout default when none is given', () => {
 		expect(pageMetadata({ description: 'x', path: '/' }).title).toBeUndefined()
 	})
