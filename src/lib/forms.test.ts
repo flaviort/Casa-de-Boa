@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { contactSchema, isBot, newsletterSchema } from './forms'
+import { HONEYPOT } from './honeypot'
 
 describe('newsletterSchema', () => {
 	it('normalizes the email', () => {
@@ -22,9 +23,14 @@ describe('contactSchema', () => {
 
 describe('isBot', () => {
 	it('flags a filled honeypot', () => {
-		expect(isBot({ website: 'http://spam' })).toBe(true)
-		expect(isBot({ website: '' })).toBe(false)
+		expect(isBot({ [HONEYPOT]: 'http://spam' })).toBe(true)
+		expect(isBot({ [HONEYPOT]: '' })).toBe(false)
 		expect(isBot({})).toBe(false)
 		expect(isBot(null)).toBe(false)
+	})
+
+	it('ignores fields browsers autofill, so real visitors are never dropped', () => {
+		expect(HONEYPOT).not.toMatch(/website|url|site|email|name|phone/i)
+		expect(isBot({ website: 'https://casadeboa.com.br' })).toBe(false)
 	})
 })

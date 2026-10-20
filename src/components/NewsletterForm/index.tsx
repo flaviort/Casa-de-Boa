@@ -4,6 +4,9 @@
 import { useId, useState } from 'react'
 import clsx from 'clsx'
 
+// utils
+import { HONEYPOT } from '@/lib/honeypot'
+
 type Status = 'idle' | 'sending' | 'done' | 'error'
 
 const CONSENT = 'Uma vez por semana, os achados novos. Sem spam, dá pra sair quando quiser.'
@@ -17,13 +20,13 @@ export default function NewsletterForm({ variant }: { variant: 'sidebar' | 'hero
 	async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
 		event.preventDefault()
 		setStatus('sending')
-		const website = new FormData(event.currentTarget).get('website')
+		const honeypot = new FormData(event.currentTarget).get(HONEYPOT)
 
 		try {
 			const res = await fetch('/api/newsletter', {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({ email, website })
+				body: JSON.stringify({ email, [HONEYPOT]: honeypot })
 			})
 			const body = await res.json().catch(() => ({}))
 			if (!res.ok) throw new Error(body.error || 'Não deu certo agora. Tenta de novo daqui a pouco?')
@@ -45,7 +48,7 @@ export default function NewsletterForm({ variant }: { variant: 'sidebar' | 'hero
 	}
 
 	return (
-		<form onSubmit={onSubmit} noValidate className={clsx(variant === 'hero' && 'mx-auto w-full max-w-md')}>
+		<form method='post' action='/api/newsletter' onSubmit={onSubmit} noValidate className={clsx(variant === 'hero' && 'mx-auto w-full max-w-md')}>
 			<div className={clsx('flex gap-2', compact ? 'flex-col' : 'flex-col sm:flex-row')}>
 				<label htmlFor={`${id}-email`} className='sr-only'>Seu e-mail</label>
 				<input
@@ -65,7 +68,7 @@ export default function NewsletterForm({ variant }: { variant: 'sidebar' | 'hero
 					)}
 				/>
 				{/* honeypot: hidden from people and keyboard, bots fill it */}
-				<input type='text' name='website' tabIndex={-1} autoComplete='off' aria-hidden='true' className='absolute -left-[9999px] h-px w-px opacity-0' />
+				<input type='text' name={HONEYPOT} tabIndex={-1} autoComplete='off' aria-hidden='true' className='absolute -left-[9999px] h-px w-px opacity-0' />
 				<button
 					type='submit'
 					disabled={status === 'sending'}

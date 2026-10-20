@@ -1,4 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { HONEYPOT } from '@/lib/honeypot'
 
 const send = vi.fn()
 vi.mock('resend', () => ({ Resend: vi.fn(() => ({ emails: { send } })) }))
@@ -6,7 +7,7 @@ vi.mock('resend', () => ({ Resend: vi.fn(() => ({ emails: { send } })) }))
 const { POST } = await import('./route')
 
 const post = (body: unknown) => POST(new Request('http://localhost/api/contact', { method: 'POST', body: JSON.stringify(body) }))
-const valid = { name: 'Ana', email: 'Ana@Exemplo.com', message: 'Quero saber do organizador.', website: '' }
+const valid = { name: 'Ana', email: 'Ana@Exemplo.com', message: 'Quero saber do organizador.', [HONEYPOT]: '' }
 
 beforeEach(() => {
 	send.mockReset()
@@ -41,7 +42,7 @@ describe('POST /api/contact', () => {
 	})
 
 	it('answers 200 to a bot without sending', async () => {
-		expect((await post({ ...valid, website: 'x' })).status).toBe(200)
+		expect((await post({ ...valid, [HONEYPOT]: 'x' })).status).toBe(200)
 		expect(send).not.toHaveBeenCalled()
 	})
 

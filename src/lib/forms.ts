@@ -1,6 +1,9 @@
 // libraries
 import { z } from 'zod'
 
+// utils
+import { HONEYPOT } from './honeypot'
+
 export const MESSAGES = {
 	invalid: 'Confere o e-mail? Parece que tem algo errado.',
 	invalidContact: 'Confere os campos? Nome, e-mail e uma mensagem de pelo menos 10 letras.',
@@ -18,7 +21,9 @@ export const contactSchema = z.object({
 })
 
 export function isBot(body: unknown): boolean {
-	return typeof body === 'object' && body !== null && typeof (body as { website?: unknown }).website === 'string' && (body as { website: string }).website.trim() !== ''
+	if (typeof body !== 'object' || body === null) return false
+	const value = (body as Record<string, unknown>)[HONEYPOT]
+	return typeof value === 'string' && value.trim() !== ''
 }
 
 export async function readJson(req: Request): Promise<unknown> {
