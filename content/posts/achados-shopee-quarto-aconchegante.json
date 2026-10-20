@@ -1,0 +1,38 @@
+{
+	"slug": "achados-shopee-quarto-aconchegante",
+	"postId": "provisorio-2",
+	"publishAt": "2026-10-20T21:00:00-03:00",
+	"title": "[PROVISÓRIO] O quarto mais gostoso com poucos achados",
+	"excerpt": "Luz quente, cama arrumada em um minuto e menos bagunça na mesa de cabeceira.",
+	"room": "quarto",
+	"cover": {
+		"url": "/provisorio/3-quarto.jpg",
+		"alt": "Quarto aconchegante com cama arrumada e luz suave",
+		"width": 1080,
+		"height": 1440
+	},
+	"body": [
+		"O quarto é o lugar onde a gente mais quer chegar e o que menos recebe carinho. Dá para mudar isso com pouca coisa.",
+		"Esses achados resolvem os incômodos de sempre: luz forte demais, fio pra todo lado e a cama que nunca fica arrumada."
+	],
+	"products": [
+		{
+			"name": "Luminária de luz quente",
+			"blurb": "Deixa o quarto com cara de hotel na hora de deitar.",
+			"image": "/provisorio/3-quarto.jpg",
+			"url": "https://s.shopee.com.br/PROVISORIO5"
+		},
+		{
+			"name": "Organizador de cabeceira",
+			"blurb": "Celular, óculos e livro num lugar só.",
+			"image": "/provisorio/3-quarto.jpg",
+			"url": "https://s.shopee.com.br/PROVISORIO6"
+		},
+		{
+			"name": "Lençol com elástico reforçado",
+			"blurb": "Fica no lugar a noite inteira.",
+			"image": "/provisorio/1-persona.jpg",
+			"url": "https://s.shopee.com.br/PROVISORIO7"
+		}
+	]
+}

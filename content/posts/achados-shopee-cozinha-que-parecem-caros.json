@@ -1,0 +1,46 @@
+{
+	"slug": "achados-shopee-cozinha-que-parecem-caros",
+	"postId": "provisorio-1",
+	"publishAt": "2026-10-19T21:11:00-03:00",
+	"title": "[PROVISÓRIO] Coisas da Shopee que eu jurava que eram caras",
+	"seoTitle": "Achados da Shopee pra cozinha que parecem caros",
+	"excerpt": "Chaleira, coador, fatiador e mais uns achados que deixam a cozinha com cara de revista sem pesar no bolso.",
+	"room": "cozinha",
+	"cover": {
+		"url": "/provisorio/2-cozinha.jpg",
+		"alt": "Mulher cozinhando numa cozinha clara com plantas e luz de fim de tarde",
+		"width": 1080,
+		"height": 1440
+	},
+	"body": [
+		"Sabe aquela cozinha de vídeo, toda combinando, que parece ter custado uma fortuna? Fui atrás de cada peça e boa parte custa menos que um lanche.",
+		"Separei aqui os que têm muita venda e avaliação boa de quem comprou. Nada de aposta: só o que já provou que resolve."
+	],
+	"products": [
+		{
+			"name": "Chaleira elétrica",
+			"blurb": "Ferve a água do café em dois minutos e ainda fica bonita em cima da bancada.",
+			"image": "/provisorio/2-cozinha.jpg",
+			"url": "https://s.shopee.com.br/PROVISORIO1"
+		},
+		{
+			"name": "Coador de pano com suporte",
+			"blurb": "Para quem gosta do café passado devagar, sem papel.",
+			"image": "/provisorio/5-jantar.jpg",
+			"url": "https://s.shopee.com.br/PROVISORIO2"
+		},
+		{
+			"name": "Fatiador de legumes",
+			"blurb": "Corta rodelas iguais de pepino e cebola sem chorar.",
+			"image": "/provisorio/2-cozinha.jpg",
+			"url": "https://s.shopee.com.br/PROVISORIO3"
+		},
+		{
+			"name": "Organizador de geladeira",
+			"blurb": "Acaba com o pote perdido lá no fundo.",
+			"image": "/provisorio/5-jantar.jpg",
+			"url": "https://s.shopee.com.br/PROVISORIO4"
+		}
+	],
+	"instagramUrl": "https://www.instagram.com/casadeboa.br/"
+}

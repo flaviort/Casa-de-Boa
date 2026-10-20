@@ -1,0 +1,25 @@
+{
+	"slug": "cozinha-organizada",
+	"postId": "a",
+	"publishAt": "2026-10-19T21:11:00-03:00",
+	"title": "Achados da Shopee pra cozinha",
+	"excerpt": "Resumo.",
+	"room": "cozinha",
+	"cover": {
+		"url": "https://pub-x.r2.dev/c.jpg",
+		"alt": "Capa",
+		"width": 1080,
+		"height": 1440
+	},
+	"body": [
+		"Texto."
+	],
+	"products": [
+		{
+			"name": "Chaleira",
+			"blurb": "Ferve.",
+			"image": "https://down-br.img.susercontent.com/file/a.jpg",
+			"url": "https://s.shopee.com.br/AKbUftcZA3"
+		}
+	]
+}
