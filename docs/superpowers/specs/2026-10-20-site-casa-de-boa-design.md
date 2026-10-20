@@ -147,7 +147,7 @@ O que entra:
 4. **Um post do blog por post, não por rede.** Só o registro do Instagram gera o post do blog.
 5. **Posts já publicados** (cozinha de 19/10, quarto de 20/10, Reel de cozinha de 20/10) entram no blog no lançamento, pela mesma ferramenta.
 
-**Sem worker.** O ISR de uma hora já cuida do horário. Se um dia o site precisar estar no ar no mesmo minuto do post, um cron no worker `casadeboa-refs-bot` pode chamar a revalidação.
+**Cron no worker (mudou na revisão de 20/10).** O ISR sozinho não basta: ele guarda o 404 de quem abriu o link de um post antes da hora e, passada a hora, ainda entrega a versão velha uma vez. O site tem a rota `POST /api/revalidate` (cabeçalho `Authorization: Bearer <REVALIDATE_SECRET>`), que limpa o cache do site inteiro. O worker `casadeboa-refs-bot` chama essa rota a cada 10 minutos por um cron, e assim o post do blog aparece no máximo 10 minutos depois do horário.
 
 Essa parte mexe no outro repositório. Ela só começa quando o site estiver no ar e o formato do JSON estiver fechado.
 
