@@ -12,6 +12,7 @@ export default function MobileNav({ profile, children }: { profile: React.ReactN
 	const pathname = usePathname()
 	const button = useRef<HTMLButtonElement>(null)
 	const sheet = useRef<HTMLDivElement>(null)
+	const header = useRef<HTMLElement>(null)
 
 	// close on navigation
 	const [lastPath, setLastPath] = useState(pathname)
@@ -24,6 +25,9 @@ export default function MobileNav({ profile, children }: { profile: React.ReactN
 		if (!open) return
 		const previous = document.body.style.overflow
 		document.body.style.overflow = 'hidden'
+		// keep keyboard and screen readers inside the sheet while it is open
+		const background = [header.current, document.getElementById('conteudo'), document.querySelector<HTMLElement>('a[href="#conteudo"]')].filter(el => el !== null)
+		background.forEach(el => { el.inert = true })
 		sheet.current?.querySelector<HTMLElement>('a, button, input')?.focus()
 
 		const onKey = (event: KeyboardEvent) => {
@@ -34,6 +38,7 @@ export default function MobileNav({ profile, children }: { profile: React.ReactN
 
 		return () => {
 			document.body.style.overflow = previous
+			background.forEach(el => { el.inert = false })
 			document.removeEventListener('keydown', onKey)
 			trigger?.focus()
 		}
@@ -41,7 +46,7 @@ export default function MobileNav({ profile, children }: { profile: React.ReactN
 
 	return (
 		<div className='lg:hidden'>
-			<header className='sticky top-0 z-30 flex items-center justify-between border-b border-linha bg-papel/90 px-4 py-3 backdrop-blur'>
+			<header ref={header} className='sticky top-0 z-30 flex items-center justify-between border-b border-linha bg-papel/90 px-4 py-3 backdrop-blur'>
 				{profile}
 				<button
 					ref={button}
