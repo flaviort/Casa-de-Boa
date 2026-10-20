@@ -1,0 +1,7 @@
+{
+	"version": "0.0.1",
+	"configurations": [
+		{ "name": "casa-de-boa-dev", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev", "--", "-p", "3010"], "port": 3010 },
+		{ "name": "casa-de-boa-start", "runtimeExecutable": "npm", "runtimeArgs": ["run", "start", "--", "-p", "3011"], "port": 3011 }
+	]
+}

@@ -25,6 +25,9 @@ const nextConfig = {
 		}
 	},
 	reactStrictMode: false,
+	outputFileTracingIncludes: {
+		'/*': ['./content/posts/**/*.json']
+	},
 	images: {
 		remotePatterns: [
 			{ protocol: 'https', hostname: '*.r2.dev' },
