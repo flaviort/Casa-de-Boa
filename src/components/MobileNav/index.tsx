@@ -2,6 +2,8 @@
 
 // libraries
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import gsap from 'gsap'
 
@@ -90,7 +92,7 @@ export default function MobileNav({ profile, children }: { profile: React.ReactN
 				</button>
 			</header>
 			{mounted && (
-				<div className='fixed inset-0 z-40'>
+				<div className='fixed inset-0 z-50'>
 					<div ref={overlay} className='invisible absolute inset-0 bg-tinta/40' onClick={() => setOpen(false)} aria-hidden='true' />
 					<div
 						ref={sheet}
@@ -100,7 +102,10 @@ export default function MobileNav({ profile, children }: { profile: React.ReactN
 						aria-label='Menu'
 						className='absolute inset-y-0 right-0 flex w-[88%] max-w-sm flex-col gap-6 overflow-y-auto bg-areia px-4 py-4'
 					>
-						<div data-menu-item className='flex justify-end'>
+						<div data-menu-item className='flex items-center justify-between'>
+							<Link href='/' className='rounded-lg'>
+								<Image src='/img/perfil.png' alt='Casa de Boa, início' width={44} height={44} className='size-11 rounded-lg' />
+							</Link>
 							<button type='button' onClick={() => setOpen(false)} className='grid size-11 place-items-center rounded-lg bg-cartao text-tinta'>
 								<CloseIcon className='size-5' />
 								<span className='sr-only'>Fechar menu</span>
