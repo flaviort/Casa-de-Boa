@@ -30,3 +30,6 @@ export const isProduction = () => process.env.VERCEL_ENV === 'production'
 
 // GA only counts production visits; stage and local builds never load it
 export const gaId = () => (isProduction() && process.env.NEXT_PUBLIC_GA_ID) || undefined
+
+// the banner and the privacy switch also show in dev so they can be checked, without loading GA
+export const showConsent = () => !!gaId() || process.env.NODE_ENV === 'development'

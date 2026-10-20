@@ -4,7 +4,6 @@ export type Consent = 'granted' | 'denied'
 
 const KEY = 'cdb-consent'
 const CHANGE = 'cdb:consent-change'
-const OPEN = 'cdb:consent-open'
 
 export const parseConsent = (value: string | null): Consent | null => value === 'granted' || value === 'denied' ? value : null
 
@@ -35,13 +34,6 @@ export function subscribeConsent(callback: () => void) {
 		window.removeEventListener(CHANGE, callback)
 		window.removeEventListener('storage', callback)
 	}
-}
-
-export const openConsent = () => window.dispatchEvent(new Event(OPEN))
-
-export function onOpenConsent(callback: () => void) {
-	window.addEventListener(OPEN, callback)
-	return () => window.removeEventListener(OPEN, callback)
 }
 
 // clears the GA cookies on this host and on the parent domain, where gtag sets them

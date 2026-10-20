@@ -10,7 +10,7 @@ import Sidebar, { Profile, SidebarContent } from '@/components/Sidebar'
 
 // utils
 import { organizationJsonLd, pageMetadata, websiteJsonLd } from '@/lib/seo'
-import { gaId, isProduction, SITE } from '@/lib/site'
+import { gaId, isProduction, showConsent, SITE } from '@/lib/site'
 
 import '@/assets/css/global.css'
 
@@ -35,8 +35,6 @@ export const viewport: Viewport = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-	const analyticsId = gaId()
-
 	return (
 		<html lang='pt-BR' className={`${manrope.variable} ${sourceSerif.variable}`} suppressHydrationWarning>
 			<head>
@@ -51,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<main id='conteudo' className='min-w-0 flex-1'>
 					{children}
 				</main>
-				{analyticsId && <CookieConsent gaId={analyticsId} />}
+				{showConsent() && <CookieConsent gaId={gaId()} />}
 				<JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
 			</body>
 		</html>

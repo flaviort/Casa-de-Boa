@@ -9,7 +9,7 @@ import PageHero, { Script } from '@/components/PageHero'
 
 // utils
 import { breadcrumbJsonLd, pageMetadata } from '@/lib/seo'
-import { gaId } from '@/lib/site'
+import { showConsent } from '@/lib/site'
 
 export const metadata = pageMetadata({
 	title: 'Privacidade e cookies',
@@ -35,8 +35,8 @@ export default function PrivacyPage() {
 			<div className='mx-auto mt-12 flex max-w-[720px] flex-col gap-12 text-lg leading-[1.7] font-medium tracking-[-0.01em] text-tinta'>
 				<Section title='Google Analytics'>
 					<p>Para saber quais posts e achados vocês mais visitam, o site pode usar o Google Analytics. Ele grava cookies no seu navegador e manda ao Google dados de navegação: páginas vistas, tempo no site, tipo de aparelho e cidade aproximada. A gente só olha os números somados, nunca uma pessoa.</p>
-					<p>Ele só liga se você clicar em Aceitar no aviso de cookies. Se recusar, nenhum script do Google é carregado. Se aceitar e depois mudar de ideia, os cookies do Analytics são apagados na hora.</p>
-					{gaId() && <CookiePreferences />}
+					<p>Ele só liga se você aceitar no aviso de cookies. Desligado, nenhum script do Google é carregado. Você pode ligar ou desligar aqui embaixo quando quiser, e ao desligar os cookies do Analytics são apagados na hora.</p>
+					{showConsent() && <CookiePreferences />}
 				</Section>
 				<Section title='Newsletter'>
 					<p>Quando você assina, guardamos só o seu e-mail, no Resend, o serviço que envia as mensagens. Ele serve para mandar os próximos achados e mais nada. Todo e-mail tem um link para cancelar, e o cancelamento apaga você da lista de envio.</p>
