@@ -19,8 +19,8 @@ export default function RoomFilter({ rooms, current }: { rooms: Room[]; current?
 							href={item.href}
 							aria-current={item.active ? 'page' : undefined}
 							className={clsx(
-								'flex min-h-11 items-center rounded-full px-4 text-sm font-extrabold whitespace-nowrap transition-colors',
-								item.active ? 'bg-tinta text-creme' : 'bg-cartao text-suave shadow-[0_1px_2px_rgba(42,30,23,0.06)] hover:text-tinta'
+								'flex min-h-10 items-center rounded-lg px-3.5 text-sm font-medium tracking-[-0.02em] whitespace-nowrap transition-colors',
+								item.active ? 'bg-tinta text-cartao' : 'bg-areia text-suave hover:text-tinta'
 							)}
 						>
 							{item.label}

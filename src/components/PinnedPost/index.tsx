@@ -2,16 +2,29 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+// components
+import { ArrowUpRightIcon, PinIcon } from '@/components/Icons'
+
 // utils
 import type { Post } from '@/lib/posts'
 
 export default function PinnedPost({ post }: { post: Post }) {
 	return (
-		<Link href={`/posts/${post.slug}`} className='group block rounded-xl bg-cartao p-2 shadow-[0_1px_2px_rgba(42,30,23,0.06)]'>
-			<div className='relative aspect-[4/3] overflow-hidden rounded-lg'>
-				<Image src={post.cover.url} alt='' fill sizes='240px' className='object-cover transition-transform duration-500 group-hover:scale-105' />
-			</div>
-			<p className='mt-2 px-1 pb-1 text-[13px] leading-snug font-bold text-tinta'>{post.title}</p>
-		</Link>
+		<>
+			<Link href={`/posts/${post.slug}`} className='group block rounded-lg bg-cartao p-2 collapsed:hidden'>
+				<p className='px-1 pt-0.5 pb-2 text-[10px] font-medium tracking-[0.13em] text-suave uppercase'>Fixado</p>
+				<div className='relative aspect-[4/3] overflow-hidden rounded'>
+					<Image src={post.cover.url} alt='' fill sizes='224px' className='object-cover transition-transform duration-500 group-hover:scale-105' />
+				</div>
+				<div className='flex items-end gap-2 px-1 pt-2 pb-1'>
+					<p className='flex-1 text-[13px] leading-snug font-semibold tracking-[-0.02em] text-tinta'>{post.title}</p>
+					<ArrowUpRightIcon className='mb-0.5 size-3 shrink-0 text-suave' />
+				</div>
+			</Link>
+			<Link href={`/posts/${post.slug}`} title={`Fixado: ${post.title}`} className='hidden min-h-[34px] items-center justify-center rounded-lg text-suave hover:bg-cartao/60 hover:text-tinta collapsed:flex'>
+				<PinIcon className='size-4' />
+				<span className='sr-only'>Post fixado: {post.title}</span>
+			</Link>
+		</>
 	)
 }

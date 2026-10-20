@@ -26,14 +26,15 @@ export default function NavLinks() {
 						<li key={href}>
 							<Link
 								href={href}
+								title={label}
 								aria-current={active ? 'page' : undefined}
 								className={clsx(
-									'flex min-h-11 items-center gap-3 rounded-lg px-3 text-[15px] font-bold transition-colors',
-									active ? 'bg-cartao text-tinta shadow-[0_1px_2px_rgba(42,30,23,0.08)]' : 'text-suave hover:bg-cartao/60 hover:text-tinta'
+									'flex min-h-[34px] items-center gap-2.5 rounded-lg px-2.5 py-2 text-sm font-medium tracking-[-0.02em] transition-colors collapsed:justify-center collapsed:px-0',
+									active ? 'bg-cartao text-tinta' : 'text-suave hover:bg-cartao/60 hover:text-tinta'
 								)}
 							>
-								<Icon className='size-[18px]' />
-								{label}
+								<Icon className='size-4 shrink-0' />
+								<span className='collapsed:sr-only'>{label}</span>
 							</Link>
 						</li>
 					)

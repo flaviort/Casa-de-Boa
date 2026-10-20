@@ -75,3 +75,19 @@ export function CloseIcon({ className }: Props) {
 		</svg>
 	)
 }
+
+export function ChevronLeftIcon({ className }: Props) {
+	return (
+		<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2.5' strokeLinecap='round' strokeLinejoin='round' className={className} aria-hidden='true'>
+			<path d='m15 6-6 6 6 6' />
+		</svg>
+	)
+}
+
+export function PinIcon({ className }: Props) {
+	return (
+		<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='1.8' strokeLinecap='round' strokeLinejoin='round' className={className} aria-hidden='true'>
+			<path d='M9 4h6l-1 5 3 3v2H7v-2l3-3-1-5ZM12 14v6' />
+		</svg>
+	)
+}

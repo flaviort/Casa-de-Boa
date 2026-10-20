@@ -1,18 +1,20 @@
 @import "tailwindcss";
 
-@theme {
-	--color-creme: #FFF6E3;
-	--color-papel: #FBF7F0;
-	--color-cartao: #FFFFFF;
-	--color-tinta: #2A1E17;
-	--color-suave: #6F5F55;
-	--color-linha: #EADFD0;
-	--color-terracota: #96340A;
-	--color-laranja: #F57A12;
-	--color-ouro: #F2C76B;
+/* the desktop sidebar collapses to an icon rail; scoped to <aside> so the mobile sheet never inherits it */
+@custom-variant collapsed (&:where([data-sidebar=collapsed] aside, [data-sidebar=collapsed] aside *));
 
-	--font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
-	--font-script: var(--font-dancing), cursive;
+@theme {
+	--color-papel: #F4F2F0;
+	--color-areia: #EDEAE7;
+	--color-cartao: #FFFFFF;
+	--color-tinta: #1F1A17;
+	--color-suave: #6B625C;
+	--color-linha: #E2DDD8;
+	--color-terracota: #96340A;
+	--color-creme: #FFF6E3;
+
+	--font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+	--font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
 }
 
 html {
@@ -23,6 +25,22 @@ html {
 body {
 	font-family: var(--font-sans);
 	-webkit-font-smoothing: antialiased;
+}
+
+button,
+select,
+summary,
+label[for],
+[role='button'],
+input[type='submit'],
+input[type='checkbox'],
+input[type='radio'] {
+	cursor: pointer;
+}
+
+button:disabled,
+select:disabled {
+	cursor: not-allowed;
 }
 
 :focus-visible {

@@ -19,12 +19,13 @@ export default function SocialLinks() {
 						href={href}
 						target='_blank'
 						rel='noopener'
-						className='group flex min-h-11 items-center gap-3 rounded-lg px-3 text-[15px] font-bold text-suave transition-colors hover:bg-cartao/60 hover:text-tinta'
+						title={label}
+						className='group flex min-h-[34px] items-center gap-2.5 rounded-lg px-2.5 py-2 text-sm font-medium tracking-[-0.02em] text-suave transition-colors hover:bg-cartao/60 hover:text-tinta collapsed:justify-center collapsed:px-0'
 					>
-						<Icon className='size-[18px]' />
-						<span className='flex-1'>{label}</span>
+						<Icon className='size-4 shrink-0' />
+						<span className='flex-1 collapsed:sr-only'>{label}</span>
 						<span className='sr-only'>(abre em nova aba)</span>
-						<ArrowUpRightIcon className='size-3.5 opacity-50 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100' />
+						<ArrowUpRightIcon className='size-3 opacity-50 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100 collapsed:hidden' />
 					</a>
 				</li>
 			))}

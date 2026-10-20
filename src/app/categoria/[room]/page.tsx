@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 // components
+import Container from '@/components/Container'
 import JsonLd from '@/components/JsonLd'
 import PageHero, { Script } from '@/components/PageHero'
 import PostGrid from '@/components/PostGrid'
@@ -45,17 +46,18 @@ export default async function RoomPage({ params }: Props) {
 	const { title, label } = copy(room)
 
 	return (
-		<div className='px-4 pt-10 pb-20 sm:px-8 lg:px-12 lg:pt-16'>
+		<Container className='pt-12 pb-20 lg:pt-20'>
 			<PageHero eyebrow={title}>
 				{label} <Script>de boa</Script>
 			</PageHero>
-			<section aria-label={`Posts de ${label}`} className='mx-auto mt-12 max-w-6xl'>
+			<section aria-labelledby='posts-titulo' className='mt-12'>
+				<h2 id='posts-titulo' className='sr-only'>Posts de {label}</h2>
 				<div className='mb-6'>
 					<RoomFilter rooms={getVisibleRooms()} current={room} />
 				</div>
 				<PostGrid posts={getPostsByRoom(room)} eager={3} />
 			</section>
 			<JsonLd data={breadcrumbJsonLd([{ name: 'Início', path: '/' }, { name: label, path: `/categoria/${room}` }])} />
-		</div>
+		</Container>
 	)
 }

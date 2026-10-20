@@ -9,8 +9,8 @@ import type { Post } from '@/lib/posts'
 export default function PostGrid({ posts, eager = 0 }: { posts: Post[]; eager?: number }) {
 	if (posts.length === 0) {
 		return (
-			<div className='rounded-2xl border border-dashed border-linha bg-cartao/60 px-6 py-12 text-center'>
-				<p className='text-lg font-extrabold text-tinta'>Os primeiros achados estão chegando.</p>
+			<div className='rounded-lg bg-cartao px-6 py-12 text-center'>
+				<p className='text-lg font-semibold tracking-[-0.04em] text-tinta'>Os primeiros achados estão chegando.</p>
 				<p className='mx-auto mt-2 mb-6 max-w-sm text-suave'>Deixa seu e-mail que você fica sabendo assim que sair o primeiro post.</p>
 				<NewsletterForm variant='hero' />
 			</div>

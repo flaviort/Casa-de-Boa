@@ -38,7 +38,7 @@ export default function NewsletterForm({ variant }: { variant: 'sidebar' | 'hero
 
 	if (status === 'done') {
 		return (
-			<p role='status' className={clsx('rounded-xl bg-creme font-bold text-terracota', compact ? 'p-3 text-sm' : 'p-4 text-base')}>
+			<p role='status' className={clsx('rounded-lg bg-creme font-semibold text-terracota', compact ? 'p-3 text-sm' : 'p-4 text-base')}>
 				Prontinho! Os próximos achados chegam no seu e-mail.
 			</p>
 		)
@@ -59,19 +59,25 @@ export default function NewsletterForm({ variant }: { variant: 'sidebar' | 'hero
 					onChange={event => setEmail(event.target.value)}
 					aria-invalid={status === 'error' || undefined}
 					aria-describedby={`${id}-help`}
-					className='min-h-11 w-full flex-1 rounded-xl border border-linha bg-cartao px-4 text-[15px] text-tinta placeholder:text-suave/70 focus:border-terracota focus:outline-none'
+					className={clsx(
+						'w-full flex-1 rounded-lg bg-cartao text-tinta placeholder:text-suave focus:outline-2 focus:outline-terracota',
+						compact ? 'min-h-9 px-3 text-xs font-medium' : 'min-h-11 px-4 text-sm font-medium'
+					)}
 				/>
 				{/* honeypot: hidden from people and keyboard, bots fill it */}
 				<input type='text' name='website' tabIndex={-1} autoComplete='off' aria-hidden='true' className='absolute -left-[9999px] h-px w-px opacity-0' />
 				<button
 					type='submit'
 					disabled={status === 'sending'}
-					className='min-h-11 shrink-0 rounded-xl bg-terracota px-5 text-[15px] font-extrabold text-creme transition-colors hover:bg-tinta disabled:opacity-60'
+					className={clsx(
+						'shrink-0 rounded-lg bg-terracota font-semibold tracking-[-0.02em] text-creme transition-colors hover:bg-tinta disabled:opacity-60',
+						compact ? 'min-h-8 px-3 text-xs' : 'min-h-11 px-5 text-sm'
+					)}
 				>
 					{status === 'sending' ? 'Enviando...' : 'Quero receber'}
 				</button>
 			</div>
-			<p id={`${id}-help`} role={status === 'error' ? 'alert' : undefined} className={clsx('mt-2 text-xs leading-relaxed', status === 'error' ? 'font-bold text-terracota' : 'text-suave', variant === 'hero' && 'text-center')}>
+			<p id={`${id}-help`} role={status === 'error' ? 'alert' : undefined} className={clsx('mt-2 text-xs leading-relaxed font-medium', status === 'error' ? 'text-terracota' : 'text-suave', variant !== 'inline' && 'text-center')}>
 				{status === 'error' ? error : CONSENT}
 			</p>
 		</form>

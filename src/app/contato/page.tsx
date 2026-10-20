@@ -2,6 +2,7 @@
 import JsonLd from '@/components/JsonLd'
 import PageHero, { Script } from '@/components/PageHero'
 import ContactForm from './ContactForm'
+import Container from '@/components/Container'
 
 // utils
 import { breadcrumbJsonLd, pageMetadata } from '@/lib/seo'
@@ -14,14 +15,14 @@ export const metadata = pageMetadata({
 
 export default function ContactPage() {
 	return (
-		<div className='px-4 pt-10 pb-20 sm:px-8 lg:px-12 lg:pt-16'>
+		<Container className='pt-12 pb-20 lg:pt-20'>
 			<PageHero eyebrow='Contato' lead='Dúvida sobre um achado, sugestão de produto ou proposta de parceria: escreve aqui que a gente responde.'>
 				Fale com a Casa de <Script>Boa</Script>
 			</PageHero>
-			<div className='mx-auto mt-10 max-w-xl'>
+			<div className='mx-auto mt-12 max-w-[560px]'>
 				<ContactForm />
 			</div>
 			<JsonLd data={breadcrumbJsonLd([{ name: 'Início', path: '/' }, { name: 'Contato', path: '/contato' }])} />
-		</div>
+		</Container>
 	)
 }
