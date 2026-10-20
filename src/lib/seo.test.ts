@@ -58,13 +58,15 @@ describe('pageMetadata', () => {
 })
 
 describe('postMetadata', () => {
-	it('uses seoTitle, the post canonical and the cover as image', () => {
+	it('uses seoTitle, the post canonical and the generated 1200x630 share image', () => {
 		const meta = postMetadata(post)
 		expect(meta.title).toBe('Achados pra cozinha')
 		expect(meta.description).toBe(post.excerpt)
 		expect(meta.alternates?.canonical).toBe(`https://casadeboa.com.br/posts/${post.slug}`)
 		expect((meta.openGraph as { type?: string }).type).toBe('article')
-		expect(JSON.stringify(meta.openGraph?.images)).toContain(post.cover.url)
+		expect(JSON.stringify(meta.openGraph?.images)).toContain(`https://casadeboa.com.br/posts/${post.slug}/opengraph-image`)
+		expect(JSON.stringify(meta.openGraph?.images)).toContain('"width":1200')
+		expect(JSON.stringify(meta.twitter)).toContain(`/posts/${post.slug}/opengraph-image`)
 	})
 
 	it('falls back to title without seoTitle', () => {

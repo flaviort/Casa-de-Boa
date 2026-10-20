@@ -26,7 +26,7 @@ const nextConfig = {
 	},
 	reactStrictMode: false,
 	outputFileTracingIncludes: {
-		'/*': ['./content/posts/**/*.json']
+		'/*': ['./content/posts/**/*.json', './src/assets/fonts/*.woff', './public/posts/**/*']
 	},
 	images: {
 		remotePatterns: [
