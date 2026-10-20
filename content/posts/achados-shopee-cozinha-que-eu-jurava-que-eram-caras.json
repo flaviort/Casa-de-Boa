@@ -1,0 +1,57 @@
+{
+	"slug": "achados-shopee-cozinha-que-eu-jurava-que-eram-caras",
+	"postId": "80a3def9-fb6b-44f6-a392-918d8bd0b19a",
+	"publishAt": "2026-10-20T22:00:00-03:00",
+	"title": "Coisas da Shopee pra cozinha que eu jurava que eram caras",
+	"seoTitle": "Achados baratos da Shopee pra cozinha que parecem caros",
+	"excerpt": "Chaleira de inox, forma de gelo com tampa, pote com dosador e mais três achados da Shopee que deixam a cozinha com cara de revista.",
+	"room": "cozinha",
+	"cover": {
+		"url": "/posts/reel-cozinha-coisas-que-eu-jurava-que-eram-caras.jpg",
+		"alt": "Mulher cozinhando numa cozinha clara, com o texto Coisas da Shopee que eu jurava que eram caras",
+		"width": 1080,
+		"height": 1440
+	},
+	"body": [
+		"Tem coisa de cozinha que a gente olha e jura que custou caro. Fui atrás e quase tudo estava na Shopee, por bem menos.",
+		"São seis achados que resolvem o dia a dia: água fervendo sem fogão, gelo que sai fácil, arroz servido sem sujeira e a despensa organizada. A forma de gelo com tampa, por exemplo, sai por R$ 25,99."
+	],
+	"products": [
+		{
+			"name": "Chaleira elétrica de inox",
+			"blurb": "Ferve 1,8 L de água rapidinho, sem depender do fogão.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820lg-mqfmutp6p53522",
+			"url": "https://s.shopee.com.br/9pfF4APvur"
+		},
+		{
+			"name": "Kit 10 organizadores de acrílico",
+			"blurb": "Pra geladeira e despensa. O armário fica com cara de revista.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhbwmr71j9j9bd",
+			"url": "https://s.shopee.com.br/80DasnbJQE"
+		},
+		{
+			"name": "Kit 4 formas de gelo com tampa",
+			"blurb": "Empilham no congelador e soltam o gelo pelo fundo de silicone.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820lj-mso8lagjmdc625",
+			"url": "https://s.shopee.com.br/50ZzJHqvX1"
+		},
+		{
+			"name": "Coador de café de inox",
+			"blurb": "Lava e usa de novo. Acabou o filtro de papel.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-7r98o-m3gpzu9ozvaw87",
+			"url": "https://s.shopee.com.br/9APYGwfX69"
+		},
+		{
+			"name": "Pote hermético com copo dosador",
+			"blurb": "Pra servir arroz e feijão sem espalhar nada na bancada.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-824gb-mf2ydqt2mvppc3",
+			"url": "https://s.shopee.com.br/1BJM6IlFs"
+		},
+		{
+			"name": "Fatiador 16 em 1",
+			"blurb": "Corta legume, fruta e verdura em várias espessuras.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhjfa9ir0mbq21",
+			"url": "https://s.shopee.com.br/50ZzJI4C7s"
+		}
+	]
+}
