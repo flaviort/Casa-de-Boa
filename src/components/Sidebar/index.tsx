@@ -13,6 +13,9 @@ import SocialLinks from '@/components/SocialLinks'
 import { getPinnedPost } from '@/lib/posts'
 import { SITE } from '@/lib/site'
 
+// pinned post hidden for now; set to true to bring it back
+const SHOW_PINNED = false
+
 function Heading({ children }: { children: React.ReactNode }) {
 	return (
 		<div data-menu-item className='relative mb-2 h-2.5'>
@@ -35,7 +38,7 @@ export function Profile() {
 }
 
 export function SidebarContent() {
-	const pinned = getPinnedPost()
+	const pinned = SHOW_PINNED ? getPinnedPost() : undefined
 
 	return (
 		<div className='flex flex-1 flex-col gap-6'>
