@@ -1,0 +1,68 @@
+{
+	"slug": "achados-shopee-cozinha-toda-visita-pergunta-provisorio-2",
+	"postId": "provisorio-2",
+	"publishAt": "2026-10-12T21:00:00-03:00",
+	"title": "[PROVISÓRIO] Cópia 2 do post de cozinha",
+	"excerpt": "Do liquidificador à pipoqueira: oito achados da Shopee que deixam a cozinha prática e bonita, e o mais barato sai por menos de R$ 20.",
+	"room": "cozinha",
+	"cover": {
+		"url": "https://pub-2d6697c0ab0640049d993f694f2f7469.r2.dev/casadeboa/109d6d10-8ac1-47ae-976c-1a816e37e35d/slide-01-mvbsmo2g.jpg",
+		"alt": "Mulher sorrindo com a mão no queixo numa cozinha clara, com o texto Toda visita pergunta onde eu comprei essas coisas",
+		"width": 1080,
+		"height": 1440
+	},
+	"body": [
+		"Sabe aquelas coisas de cozinha que toda visita repara e pergunta de onde é? A resposta quase sempre é Shopee, e ninguém acredita.",
+		"Separei oito, do liquidificador à pipoqueira. Todos são campeões de vendas e têm nota alta de quem comprou, então nada de aposta. E o mais barato da lista sai por menos de R$ 20."
+	],
+	"products": [
+		{
+			"name": "Liquidificador Mondial 550 W",
+			"blurb": "Três velocidades para vitamina, molho e sopa sem sofrimento. Mais de 13 mil vendas e nota 4,9.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-7r98o-mc83lzgst4gw71",
+			"url": "https://s.shopee.com.br/30ourIW0FN"
+		},
+		{
+			"name": "Mixer elétrico para bebidas",
+			"blurb": "Bate leite, café e clara de ovo sem precisar sujar o liquidificador. O mais vendido da lista.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-7rd48-lupf3z3a40mxf1",
+			"url": "https://s.shopee.com.br/9pfEzrAaw4"
+		},
+		{
+			"name": "Chaleira elétrica de vidro",
+			"blurb": "Esquenta 1,8 L de água para o café sem ligar o fogão, e ainda fica bonita na bancada.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820me-mrrez8yu1khzda",
+			"url": "https://s.shopee.com.br/8V9rPPFbRo"
+		},
+		{
+			"name": "Kit 4 potes herméticos",
+			"blurb": "Mantimentos fechados e organizados, com tampa de bambu. É o que mais chama atenção no armário aberto.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-822x5-mo74eg768t8m85",
+			"url": "https://s.shopee.com.br/3VlBSDctsJ"
+		},
+		{
+			"name": "Garrafa térmica com cabo de madeira",
+			"blurb": "Um litro de café para a manhã inteira, sem esfriar.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820l8-mpwlcsd38hz589",
+			"url": "https://s.shopee.com.br/qkQHJresK"
+		},
+		{
+			"name": "Kit 19 utensílios de silicone",
+			"blurb": "Tudo para cozinhar numa peça só, sem arranhar a panela. Vem com suporte para deixar à mão.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820l4-mtxyj2g4llhfcb",
+			"url": "https://s.shopee.com.br/AKbVamLknK"
+		},
+		{
+			"name": "Tesoura multifuncional",
+			"blurb": "Corta legumes, verdura e frango sem sujar a tábua.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820m8-mmgtv88q60w65d",
+			"url": "https://s.shopee.com.br/AKbVamQDnq"
+		},
+		{
+			"name": "Pipoqueira elétrica",
+			"blurb": "Pipoca sem óleo e sem panela queimada. Sessão de filme resolvida.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-81z1k-me7iswtkw3yb2f",
+			"url": "https://s.shopee.com.br/AKbVamUYLH"
+		}
+	]
+}

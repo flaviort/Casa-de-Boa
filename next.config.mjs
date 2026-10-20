@@ -32,7 +32,8 @@ const nextConfig = {
 		remotePatterns: [
 			{ protocol: 'https', hostname: '*.r2.dev' },
 			{ protocol: 'https', hostname: 'media.casadeboa.com.br' },
-			{ protocol: 'https', hostname: '*.susercontent.com' }
+			{ protocol: 'https', hostname: '*.susercontent.com' },
+			{ protocol: 'https', hostname: 'cf.shopee.com.br' }
 		],
 		formats: ['image/avif', 'image/webp']
 	}
