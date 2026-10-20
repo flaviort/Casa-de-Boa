@@ -13,7 +13,7 @@ import { getPinnedPost } from '@/lib/posts'
 import { SITE } from '@/lib/site'
 
 function Heading({ children }: { children: React.ReactNode }) {
-	return <p className='mb-2 px-3 text-[11px] font-extrabold tracking-[0.12em] text-suave/80 uppercase'>{children}</p>
+	return <p className='mb-2 px-3 text-[11px] font-extrabold tracking-[0.12em] text-suave uppercase'>{children}</p>
 }
 
 export function Profile() {
