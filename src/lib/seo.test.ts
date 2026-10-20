@@ -21,8 +21,13 @@ describe('organizationJsonLd', () => {
 		expect(org.name).toBe('Casa de Boa')
 		expect(org.alternateName).toEqual(expect.arrayContaining(['casadeboa', 'casadeboa.br']))
 		expect(org.url).toBe('https://casadeboa.com.br')
-		expect(org.sameAs).toHaveLength(3)
-		expect(org.sameAs).toContain('https://www.instagram.com/casadeboa.br/')
+		expect(org.sameAs).toEqual(expect.arrayContaining([
+			'https://www.instagram.com/casadeboa.br/',
+			'https://www.tiktok.com/@casadeboa.br',
+			'https://www.facebook.com/profile.php?id=61595317740192',
+			'https://www.youtube.com/@casadeboa',
+			'https://br.pinterest.com/casadeboa/'
+		]))
 	})
 })
 

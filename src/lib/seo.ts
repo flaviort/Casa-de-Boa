@@ -52,7 +52,7 @@ export function organizationJsonLd(): object {
 		alternateName: [...SITE.alternateNames],
 		url: SITE.url,
 		logo: absoluteUrl('/img/perfil.png'),
-		sameAs: Object.values(SITE.socials)
+		sameAs: [...Object.values(SITE.socials), ...SITE.otherProfiles]
 	}
 }
 
