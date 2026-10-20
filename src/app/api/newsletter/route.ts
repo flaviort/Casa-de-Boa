@@ -17,10 +17,23 @@ export async function POST(req: Request) {
 		return reply(500, { ok: false, error: MESSAGES.failed })
 	}
 
+	const { email } = parsed.data
+
 	try {
-		const { error } = await new Resend(RESEND_API_KEY).contacts.create({ email: parsed.data.email, unsubscribed: false, segments: [{ id: RESEND_SEGMENT_ID }] })
-		// a repeated sign-up is fine for the visitor, so it counts as success
-		if (error && !/already exists/i.test(error.message)) {
+		const resend = new Resend(RESEND_API_KEY)
+		const created = await resend.contacts.create({ email, unsubscribed: false, segments: [{ id: RESEND_SEGMENT_ID }] })
+		let error = created.error
+
+		// contacts are account-wide: an existing one may be unsubscribed or outside this segment
+		if (error && /already exists/i.test(error.message)) {
+			error = (await resend.contacts.update({ email, unsubscribed: false })).error
+			if (!error) {
+				const added = (await resend.contacts.segments.add({ email, segmentId: RESEND_SEGMENT_ID })).error
+				error = added && !/already/i.test(added.message) ? added : null
+			}
+		}
+
+		if (error) {
 			console.error('newsletter: resend error', error)
 			return reply(502, { ok: false, error: MESSAGES.failed })
 		}

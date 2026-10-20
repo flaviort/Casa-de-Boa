@@ -1,7 +1,9 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 const create = vi.fn()
-vi.mock('resend', () => ({ Resend: vi.fn(() => ({ contacts: { create } })) }))
+const update = vi.fn()
+const addSegment = vi.fn()
+vi.mock('resend', () => ({ Resend: vi.fn(() => ({ contacts: { create, update, segments: { add: addSegment } } })) }))
 
 const { POST } = await import('./route')
 
@@ -9,6 +11,8 @@ const post = (body: unknown) => POST(new Request('http://localhost/api/newslette
 
 beforeEach(() => {
 	create.mockReset()
+	update.mockReset().mockResolvedValue({ data: { id: 'c1' }, error: null })
+	addSegment.mockReset().mockResolvedValue({ data: { id: 'c1' }, error: null })
 	process.env.RESEND_API_KEY = 're_test'
 	process.env.RESEND_SEGMENT_ID = 'seg_1'
 })
@@ -40,10 +44,30 @@ describe('POST /api/newsletter', () => {
 		expect(create).not.toHaveBeenCalled()
 	})
 
-	it('treats an existing contact as success', async () => {
+	it('resubscribes an existing contact and adds it to the segment', async () => {
 		create.mockResolvedValue({ data: null, error: { name: 'validation_error', message: 'Contact already exists' } })
 		const res = await post({ email: 'ana@exemplo.com', website: '' })
 		expect(res.status).toBe(200)
+		expect(update).toHaveBeenCalledWith(expect.objectContaining({ email: 'ana@exemplo.com', unsubscribed: false }))
+		expect(addSegment).toHaveBeenCalledWith({ email: 'ana@exemplo.com', segmentId: 'seg_1' })
+	})
+
+	it('answers 502 when an existing contact cannot be resubscribed', async () => {
+		create.mockResolvedValue({ data: null, error: { name: 'validation_error', message: 'Contact already exists' } })
+		update.mockResolvedValue({ data: null, error: { name: 'application_error', message: 'boom' } })
+		expect((await post({ email: 'ana@exemplo.com', website: '' })).status).toBe(502)
+	})
+
+	it('accepts a contact that is already in the segment', async () => {
+		create.mockResolvedValue({ data: null, error: { name: 'validation_error', message: 'Contact already exists' } })
+		addSegment.mockResolvedValue({ data: null, error: { name: 'validation_error', message: 'Contact is already in this segment' } })
+		expect((await post({ email: 'ana@exemplo.com', website: '' })).status).toBe(200)
+	})
+
+	it('answers 502 when an existing contact cannot join the segment', async () => {
+		create.mockResolvedValue({ data: null, error: { name: 'validation_error', message: 'Contact already exists' } })
+		addSegment.mockResolvedValue({ data: null, error: { name: 'application_error', message: 'boom' } })
+		expect((await post({ email: 'ana@exemplo.com', website: '' })).status).toBe(502)
 	})
 
 	it('answers 502 when Resend returns an error', async () => {
