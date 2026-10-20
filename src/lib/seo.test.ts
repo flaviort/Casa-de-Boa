@@ -24,7 +24,7 @@ describe('organizationJsonLd', () => {
 		expect(org.sameAs).toEqual(expect.arrayContaining([
 			'https://www.instagram.com/casadeboa.br/',
 			'https://www.tiktok.com/@casadeboa.br',
-			'https://www.facebook.com/profile.php?id=61595317740192',
+			'https://www.facebook.com/casadeboa.br',
 			'https://www.youtube.com/@casadeboa',
 			'https://br.pinterest.com/casadeboa/'
 		]))

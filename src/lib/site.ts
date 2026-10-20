@@ -8,7 +8,7 @@ export const SITE = {
 	socials: {
 		instagram: 'https://www.instagram.com/casadeboa.br/',
 		tiktok: 'https://www.tiktok.com/@casadeboa.br',
-		facebook: 'https://www.facebook.com/profile.php?id=61595317740192'
+		facebook: 'https://www.facebook.com/casadeboa.br'
 	},
 	// reserved profiles: not in the menu, but listed in sameAs so Google ties them to the brand
 	otherProfiles: [
