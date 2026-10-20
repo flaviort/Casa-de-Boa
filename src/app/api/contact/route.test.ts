@@ -27,6 +27,7 @@ describe('POST /api/contact', () => {
 			replyTo: 'ana@exemplo.com'
 		}))
 		expect(send.mock.calls[0][0].text).toContain('Quero saber do organizador.')
+		expect(send.mock.calls[0][0].html).toContain('Quero saber do organizador.')
 	})
 
 	it('keeps the subject on one line', async () => {

@@ -2,6 +2,7 @@
 import { Resend } from 'resend'
 
 // utils
+import { contactEmail } from '@/lib/emails/contact'
 import { contactSchema, isBot, MESSAGES, readJson, reply } from '@/lib/forms'
 
 export async function POST(req: Request) {
@@ -20,12 +21,14 @@ export async function POST(req: Request) {
 	const { name, email, message } = parsed.data
 
 	try {
+		const { subject, html, text } = contactEmail({ name, email, message })
 		const { error } = await new Resend(RESEND_API_KEY).emails.send({
 			from: CONTACT_FROM_EMAIL,
 			to: CONTACT_TO_EMAIL,
 			replyTo: email,
-			subject: `Contato pelo site: ${name.replace(/\s+/g, ' ')}`,
-			text: `Nome: ${name}\nE-mail: ${email}\n\n${message}`
+			subject,
+			html,
+			text
 		})
 		if (error) {
 			console.error('contact: resend error', error)
