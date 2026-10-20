@@ -99,7 +99,7 @@ Campos de cada post:
 | `title`, `excerpt` | título e resumo do blog (o resumo vira a meta description) |
 | `seoTitle?` | título para o `<title>` quando for diferente |
 | `room` | um valor de uma lista fechada: `cozinha`, `quarto`, `sala`, `banheiro`, `lavanderia`, `organizacao`, `especial` (datas comemorativas e mistura de cômodos). Um por post. Usado no filtro e nas categorias |
-| `cover` | `{ url, alt, width, height }`; URL pública do R2 |
+| `cover` | `{ url, alt, width, height }`; caminho local `/posts/<slug>.jpg` (arquivo em `public/posts`) |
 | `body` | texto curto em parágrafos (Markdown simples ou lista de parágrafos; fica com quem construir) |
 | `products[]` | `{ name, blurb, image, url }`; `url` é o link de afiliado com o sub-ID do blog |
 | `pinned?` | fixa o post no menu lateral |
@@ -109,7 +109,7 @@ O site valida os arquivos no build (com zod ou parecido) e o build falha se um l
 
 **Minha decisão sobre o ID de afiliado:** os links vêm do `shopee link` do `affiliates`, que devolve o link curto (`https://s.shopee.com.br/...`) gerado pela API com as credenciais da conta. O ID `18390951288` vai dentro do link curto por construção e não aparece na URL, então o site não tem como conferir. A garantia fica no `blog export`, que só aceita links gerados pelo `shopee link`, nunca colados à mão.
 
-**Minha decisão sobre a capa:** "a capa" é a capa do post nas redes, ou seja, o primeiro slide do carrossel, com o título e a cursiva já na imagem (o pôster JPG do slide 1 que o render sobe no R2, 1080x1440, 3:4). Por isso os cards e a capa do post usam proporção 3:4, e não a paisagem do memoir. No Reel, a capa é o pôster do quadro do gancho, e o blog mostra só a imagem parada, sem o vídeo. Para a imagem OG (1,91:1), quem construir decide entre recortar a capa ou gerar uma OG própria no build.
+**Minha decisão sobre a capa:** "a capa" é a capa do post nas redes, ou seja, o primeiro slide do carrossel, com o título e a cursiva já na imagem (o pôster JPG do slide 1 que o render sobe no R2, 1080x1440, 3:4). Por isso os cards e a capa do post usam proporção 3:4, e não a paisagem do memoir. No Reel, a capa é o pôster do quadro do gancho, e o blog mostra só a imagem parada, sem o vídeo. A imagem OG (1200x630) é gerada por post em `src/app/posts/[slug]/opengraph-image.tsx`: capa à esquerda, título à direita.
 
 ### Quando o post aparece
 
@@ -143,7 +143,7 @@ O que entra:
 
 1. **O Criador escreve a versão de blog** junto com a legenda: título, resumo, um texto curto e uma frase por produto, no guia de voz, mas para leitura (sem "Comenta PALAVRA", sem hashtags). Fica gravado no post (por exemplo, uma coluna `blog` em `posts`). O Revisor revisa e o card do Notion mostra, então o dono aprova tudo de uma vez.
 2. **Links do blog:** um link de afiliado por produto, gerado pelo `shopee link` com os mesmos `subIds` que os links do Facebook usam, só trocando `facebook` por `blog` no último (por exemplo `cozinhablog` no lugar de `cozinhafacebook`, veja `_temp/posts/links-facebook.txt`). Assim o `shopee report` separa os cliques do blog dos das redes.
-3. **Ferramenta nova `blog export { postId }`:** monta o JSON do post (capa pela URL pública do R2, produtos com os links do blog, `publishAt` igual ao `scheduled_at`) e faz o commit em `content/posts/<slug>.json` no repositório `Casa-de-Boa` pela API do GitHub, com um token só de escrita nesse repositório. Respeita `DRY_RUN`. Roda quando o dono aprova o post (no `notion queue-pull`).
+3. **Ferramenta nova `blog export { postId }`:** baixa a capa do R2 e commita em `public/posts/<slug>.jpg` junto com o JSON do post (capa servida pelo próprio site, produtos com os links do blog, `publishAt` igual ao `scheduled_at`) e faz o commit em `content/posts/<slug>.json` no repositório `Casa-de-Boa` pela API do GitHub, com um token só de escrita nesse repositório. Respeita `DRY_RUN`. Roda quando o dono aprova o post (no `notion queue-pull`).
 4. **Um post do blog por post, não por rede.** Só o registro do Instagram gera o post do blog.
 5. **Posts já publicados** (cozinha de 19/10, quarto de 20/10, Reel de cozinha de 20/10) entram no blog no lançamento, pela mesma ferramenta.
 
