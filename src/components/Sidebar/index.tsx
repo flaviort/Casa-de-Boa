@@ -55,11 +55,11 @@ export function SidebarContent() {
 
 export default function Sidebar() {
 	return (
-		<aside className='sticky top-0 hidden h-dvh w-60 shrink-0 bg-areia transition-[width] duration-300 ease-out lg:block collapsed:w-[70px]'>
+		<aside className='sticky top-0 hidden h-dvh w-64 shrink-0 bg-areia transition-[width] duration-300 ease-out lg:block collapsed:w-[70px]'>
 			<SidebarToggle />
-			{/* content keeps a fixed 240px width and the aside clips it, so nothing reflows while the width animates */}
+			{/* content keeps a fixed 256px width and the aside clips it, so nothing reflows while the width animates */}
 			<div className='h-full overflow-x-hidden overflow-y-auto'>
-				<div className='flex min-h-full w-60 flex-col gap-7 px-4 pt-6 pb-4'>
+				<div className='flex min-h-full w-64 flex-col gap-7 px-4 pt-6 pb-4'>
 					<Profile />
 					<SidebarContent />
 				</div>

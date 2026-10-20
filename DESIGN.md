@@ -35,12 +35,12 @@ Referência: https://memoir.framer.website/ (medida em 20/10/2026 a 1440px). O l
 
 ## Sidebar
 
-- 240px aberta, 70px recolhida. Padding 24px em cima e 16px nos lados.
+- 256px aberta (o memoir usa 240px; aumentamos 16px para a seta não encostar na linha do slogan), 70px recolhida. Padding 24px em cima e 16px nos lados.
 - Seta de recolher: círculo de 24px na cor `tinta`, com seta branca de 14px, centrado sobre a borda direita da sidebar, na altura do nome. Gira 180° quando recolhida.
 - Recolhida: só a foto do perfil, os ícones do menu e das redes e o ícone do post fixado; os textos somem e o nome de cada item vira `title`/`aria-label`. A newsletter some.
 - A escolha (aberta ou recolhida) fica no navegador da pessoa (`localStorage`) e é aplicada antes da primeira pintura, para não piscar.
 - Itens de menu: 34px de altura, padding 8px 11px, canto 8px; o ativo tem fundo `cartao`. Recolhidos, os itens encolhem para 38px de largura (um quadrado em volta do ícone).
-- Animação de abrir e recolher (300ms): o conteúdo da sidebar tem largura fixa de 240px e a borda da sidebar corta por cima. Nada muda de lugar e nada quebra linha durante a animação; textos só esmaecem (`opacity`) e os ícones ficam parados, já na posição em que caem centralizados na faixa de 70px (27px da borda). Nunca usar `hidden`, `sr-only` ou mudar alinhamento no estado recolhido, porque isso troca o layout no primeiro quadro e o ícone "pula".
+- Animação de abrir e recolher (300ms): o conteúdo da sidebar tem largura fixa de 256px e a borda da sidebar corta por cima. Nada muda de lugar e nada quebra linha durante a animação; textos só esmaecem (`opacity`) e os ícones ficam parados, já na posição em que caem centralizados na faixa de 70px (27px da borda). Nunca usar `hidden`, `sr-only` ou mudar alinhamento no estado recolhido, porque isso troca o layout no primeiro quadro e o ícone "pula".
 
 ## Página do post
 
