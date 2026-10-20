@@ -28,6 +28,7 @@ describe('sitemap', () => {
 			'https://casadeboa.com.br/',
 			'https://casadeboa.com.br/sobre',
 			'https://casadeboa.com.br/contato',
+			'https://casadeboa.com.br/privacidade',
 			'https://casadeboa.com.br/posts/cozinha-ok',
 			'https://casadeboa.com.br/categoria/cozinha'
 		]))

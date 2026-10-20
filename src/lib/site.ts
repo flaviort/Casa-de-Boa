@@ -27,3 +27,6 @@ export function absoluteUrl(path: string): string {
 
 // stage and preview deployments must stay out of search results
 export const isProduction = () => process.env.VERCEL_ENV === 'production'
+
+// GA only counts production visits; stage and local builds never load it
+export const gaId = () => (isProduction() && process.env.NEXT_PUBLIC_GA_ID) || undefined

@@ -3,13 +3,14 @@ import type { Metadata, Viewport } from 'next'
 import { Manrope, Source_Serif_4 } from 'next/font/google'
 
 // components
+import CookieConsent from '@/components/CookieConsent'
 import JsonLd from '@/components/JsonLd'
 import MobileNav from '@/components/MobileNav'
 import Sidebar, { Profile, SidebarContent } from '@/components/Sidebar'
 
 // utils
 import { organizationJsonLd, pageMetadata, websiteJsonLd } from '@/lib/seo'
-import { isProduction, SITE } from '@/lib/site'
+import { gaId, isProduction, SITE } from '@/lib/site'
 
 import '@/assets/css/global.css'
 
@@ -34,6 +35,8 @@ export const viewport: Viewport = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+	const analyticsId = gaId()
+
 	return (
 		<html lang='pt-BR' className={`${manrope.variable} ${sourceSerif.variable}`} suppressHydrationWarning>
 			<head>
@@ -48,6 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<main id='conteudo' className='min-w-0 flex-1'>
 					{children}
 				</main>
+				{analyticsId && <CookieConsent gaId={analyticsId} />}
 				<JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
 			</body>
 		</html>

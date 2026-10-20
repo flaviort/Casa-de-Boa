@@ -48,6 +48,7 @@ export function SidebarContent() {
 			<div data-menu-item className='mt-auto transition-[opacity,visibility] duration-200 collapsed:invisible collapsed:opacity-0'>
 				<p className='mb-3 text-center text-base font-semibold tracking-[-0.04em] text-tinta'>Fique por dentro</p>
 				<NewsletterForm variant='sidebar' />
+				<Link href='/privacidade' className='mt-3 block text-center text-xs font-medium text-suave underline-offset-4 hover:text-tinta hover:underline'>Privacidade e cookies</Link>
 			</div>
 		</div>
 	)
