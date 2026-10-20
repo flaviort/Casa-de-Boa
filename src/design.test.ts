@@ -24,6 +24,11 @@ describe('design rules', () => {
 		expect(offenders).toEqual([])
 	})
 
+	it('never swaps layout in the collapsed sidebar state (only fades and widths)', () => {
+		const offenders = files.filter(f => /collapsed:(hidden|sr-only|block|flex|justify-|px-|mx-)/.test(fs.readFileSync(f, 'utf8')))
+		expect(offenders).toEqual([])
+	})
+
 	it('loads the reference fonts', () => {
 		const layout = fs.readFileSync(path.join(__dirname, 'app/layout.tsx'), 'utf8')
 		expect(layout).toContain('Manrope')

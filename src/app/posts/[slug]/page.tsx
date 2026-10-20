@@ -53,21 +53,22 @@ export default async function PostPage({ params }: Props) {
 					</p>
 				</nav>
 
-				<header className='mx-auto mt-10 max-w-3xl text-center'>
-					<h1 className='text-[36px] leading-[1.1] font-medium tracking-[-0.06em] text-tinta text-balance sm:text-[56px]'>{post.title}</h1>
-					<p className='mx-auto mt-5 max-w-xl text-base leading-relaxed font-medium tracking-[-0.02em] text-suave text-pretty'>{post.excerpt}</p>
-					<p className='mt-3 text-xs font-medium text-suave'>
-						<time dateTime={post.publishAt}>{formatDate.format(new Date(post.publishAt))}</time>
-					</p>
+				<header className='mt-8 grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,440px)] lg:gap-16'>
+					<div>
+						<h1 className='text-[36px] leading-[1.1] font-medium tracking-[-0.06em] text-tinta text-balance sm:text-[56px]'>{post.title}</h1>
+						<p className='mt-5 max-w-xl text-base leading-relaxed font-medium tracking-[-0.02em] text-suave text-pretty'>{post.excerpt}</p>
+						<p className='mt-4 text-xs font-medium text-suave'>
+							<time dateTime={post.publishAt}>{formatDate.format(new Date(post.publishAt))}</time>
+						</p>
+					</div>
+					<div className='rounded-lg bg-cartao p-3'>
+						<div className='relative aspect-[3/4] overflow-hidden rounded'>
+							<Image src={post.cover.url} alt={post.cover.alt} fill priority sizes='(min-width: 1024px) 440px, 92vw' className='object-cover' />
+						</div>
+					</div>
 				</header>
 
-				<div className='mx-auto mt-10 max-w-[720px] rounded-lg bg-cartao p-3'>
-					<div className='relative mx-auto aspect-[3/4] max-w-md overflow-hidden rounded'>
-						<Image src={post.cover.url} alt={post.cover.alt} fill priority sizes='(min-width: 640px) 448px, 92vw' className='object-cover' />
-					</div>
-				</div>
-
-				<div className='mx-auto mt-10 flex max-w-[720px] flex-col gap-4 text-lg leading-[1.7] font-medium tracking-[-0.01em] text-tinta'>
+				<div className='mx-auto mt-14 flex max-w-[720px] flex-col gap-4 text-lg leading-[1.7] font-medium tracking-[-0.01em] text-tinta'>
 					{post.body.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
 				</div>
 

@@ -29,12 +29,12 @@ export default function NavLinks() {
 								title={label}
 								aria-current={active ? 'page' : undefined}
 								className={clsx(
-									'flex min-h-[34px] items-center gap-2.5 rounded-lg px-2.5 py-2 text-sm font-medium tracking-[-0.02em] transition-colors collapsed:justify-center collapsed:px-0',
+									'flex min-h-[34px] w-full items-center gap-2.5 overflow-hidden rounded-lg px-[11px] py-2 text-sm font-medium tracking-[-0.02em] transition-[width,background-color,color] duration-300 ease-out collapsed:w-[38px]',
 									active ? 'bg-cartao text-tinta' : 'text-suave hover:bg-cartao/60 hover:text-tinta'
 								)}
 							>
 								<Icon className='size-4 shrink-0' />
-								<span className='collapsed:sr-only'>{label}</span>
+								<span className='whitespace-nowrap transition-opacity duration-200 collapsed:opacity-0'>{label}</span>
 							</Link>
 						</li>
 					)
