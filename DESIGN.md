@@ -44,8 +44,10 @@ Referência: https://memoir.framer.website/ (medida em 20/10/2026 a 1440px). O l
 
 ## Página do post
 
-- Topo em duas colunas no desktop: título, subtítulo e data à esquerda; a capa à direita, com no máximo 440px de largura, dentro de um card branco. No celular, empilha (texto em cima, capa embaixo).
+- Topo em duas colunas no desktop. Esquerda: "Voltar" e o cômodo em selos, título, subtítulo, data e número de achados, e uma faixa `areia` com miniaturas dos 5 primeiros produtos e o botão "Ver os N achados", que rola até a lista. Direita: a capa solta, sem moldura, só com canto de 8px, com no máximo 440px de largura. No celular, empilha e o botão ocupa a largura toda.
+- O topo entra com o `Reveal` (GSAP): os itens da esquerda sobem em sequência e a capa aparece junto.
 - Abaixo do topo, texto, achados e newsletter numa coluna de 720px centralizada, dentro do mesmo `Container`.
+- Sem aviso de comissão de afiliado na página (dono). Os links continuam com `rel="sponsored"`.
 
 ## Cards de post
 
