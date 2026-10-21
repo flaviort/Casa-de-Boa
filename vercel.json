@@ -1,0 +1,7 @@
+{
+	"redirects": [
+		{ "source": "/posts/achados-shopee-quarto-de-hotel", "destination": "/posts/quarto-com-cara-de-hotel", "permanent": true },
+		{ "source": "/posts/achados-shopee-cozinha-toda-visita-pergunta", "destination": "/posts/cozinha-que-as-visitas-reparam", "permanent": true },
+		{ "source": "/posts/achados-shopee-cozinha-que-eu-jurava-que-eram-caras", "destination": "/posts/cozinha-que-parece-cara", "permanent": true }
+	]
+}
