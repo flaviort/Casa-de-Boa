@@ -1,0 +1,51 @@
+{
+	"slug": "lavanderia-pratica-no-dia-a-dia",
+	"postId": "adcd204f-f5e8-40fe-9de9-27108fdd4096",
+	"publishAt": "2026-11-02T21:00:00-03:00",
+	"title": "Saí de casa fugindo da pilha de roupa, e ela continuou lá",
+	"seoTitle": "Achados da Shopee pra cuidar da roupa e limpar a casa",
+	"excerpt": "Papa bolinhas, mini lavadora de bancada e rodinho de mão: achados da Shopee pra cuidar da roupa e deixar a limpeza mais leve.",
+	"room": "lavanderia",
+	"cover": {
+		"url": "/posts/lavanderia-pratica-no-dia-a-dia.jpg",
+		"alt": "Mulher de sobretudo bege andando na calçada arborizada com um copo de café na mão, com o texto da capa",
+		"width": 1080,
+		"height": 1440
+	},
+	"body": [
+		"A pilha de roupa não vai embora sozinha, e a bancada também não se limpa. Dá pra fugir por umas horas, mas ela continua lá quando você volta.",
+		"Aqui tem coisa pequena pra deixar essa rotina mais leve: tirar as bolinhas da blusa, lavar as peças pequenas e passar o rodinho na bancada. Só entra o que já tem venda na Shopee."
+	],
+	"products": [
+		{
+			"name": "Papa Bolinhas Eletrico Tira Pelos de Roupas Removedor Aparador Sem Fio Recarregá",
+			"blurb": "Papa bolinhas sem fio pra passar na blusa e deixar o tecido sem bolinhas.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-821fu-mgpih2ejj9562a",
+			"url": "https://s.shopee.com.br/2Vsyn2F4k0"
+		},
+		{
+			"name": "Mini Máquina de Lavar Portátil 1000ml – Lavadora Compacta USB para Roupas Íntima",
+			"blurb": "Mini lavadora de bancada pras peças pequenas, com carga por USB.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-7rasr-mabm8tdd10gac1",
+			"url": "https://s.shopee.com.br/6fiXkh3CUZ"
+		},
+		{
+			"name": "Cesto De Roupa 40x70 30x50Cm Caixa Dobrável Brinquedos Cesto Diversa Organizador",
+			"blurb": "Cesto de tela que guarda os brinquedos e dobra até caber na mão.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-7r98o-mabeeeswsx4mc1",
+			"url": "https://s.shopee.com.br/AAIPv7qMBI"
+		},
+		{
+			"name": "Rodinho de Pia Mini Mop Portátil com Esponja Absorvente para Limpeza Rápida de C",
+			"blurb": "Rodinho de mão que puxa a sujeira da bancada pro lixo e passa no espelho.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820lr-ms2vj1ddc7wn85",
+			"url": "https://s.shopee.com.br/5fq0Yr2x3s"
+		},
+		{
+			"name": "KIT Limpeza Escovas 3 unds Multiuso Tanque Faxina Pisos Banheiro Azulejos, Roupa",
+			"blurb": "Kit com três escovas, duas de cabo e uma de mão.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-81z1k-mi301cjp76yp15",
+			"url": "https://s.shopee.com.br/906SWyqKVL"
+		}
+	]
+}
