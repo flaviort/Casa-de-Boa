@@ -1,0 +1,51 @@
+{
+	"slug": "eletronicos-para-o-dia-a-dia",
+	"postId": "91ab09dc-5a8a-4623-a6fe-36ebed24db92",
+	"publishAt": "2026-11-05T21:00:00-03:00",
+	"title": "No metrô todo mundo pergunta onde eu comprei, e eu digo que foi caro",
+	"seoTitle": "Eletrônicos baratos da Shopee para o dia a dia",
+	"excerpt": "Fone de clipe, smartwatch de pulseira laranja e mini console pra dois: achados de tecnologia da Shopee para o dia a dia.",
+	"room": "especial",
+	"cover": {
+		"url": "/posts/eletronicos-para-o-dia-a-dia.jpg",
+		"alt": "Mulher de jaqueta preta e gola alta de perfil no metrô, olhando pela janela, com o texto da capa",
+		"width": 1080,
+		"height": 1440
+	},
+	"body": [
+		"Metrô lotado, fone caindo da orelha, e a gente ali catando do chão. Tecnologia boa não precisa custar caro nem parecer complicada.",
+		"Aqui estão fones, smartwatch, mini console e caixinha de som para o dia a dia. Só entra aqui o que já tem venda na Shopee."
+	],
+	"products": [
+		{
+			"name": "INOVA FreeClip Fone de Ouvido Bluetooth Sem Fio Design em C Digital de Bateria C",
+			"blurb": "Fone em formato de clipe, com caixinha do tamanho da palma da mão.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820l7-mmipscxwcn4626",
+			"url": "https://s.shopee.com.br/6fiXkhYLFV"
+		},
+		{
+			"name": "2026 Nova Série 8 Relógio T800 Ultra SmartWatch Esportivo Sem Fio À Prova D'água",
+			"blurb": "Smartwatch de pulseira laranja, com calendário, discador e aplicativos na tela.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-7r98o-ltf8m6f1us5b8b",
+			"url": "https://s.shopee.com.br/3qOMNUjGVe"
+		},
+		{
+			"name": "MINISO X15 Pro Fone TWS Sem Fio Bluetooth 5.4 Tradução Inteligente em Tempo Real",
+			"blurb": "Fone de gancho com estojo redondo e transparente, lilás ou creme.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820m8-mr9w0ajq2mfae6",
+			"url": "https://s.shopee.com.br/gRKbfvJyN"
+		},
+		{
+			"name": "H'maston Mini Console Portátil Para Dois Jogadores 400 Jogos Antigos Em Um Só Ap",
+			"blurb": "Mini console vermelho, com um controle a mais pra jogar em dois.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-81z1k-mh74eakadr0lcd",
+			"url": "https://s.shopee.com.br/LoUD3wS7x"
+		},
+		{
+			"name": "K12 Caixa de som sem fio com microfone Karaokê, Mini Alto-falante Bluetooth port",
+			"blurb": "Caixinha de som com microfone, luz colorida em volta e alça de couro.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-7rff1-m96a3707agyh54",
+			"url": "https://s.shopee.com.br/9pfZWWHXio"
+		}
+	]
+}
