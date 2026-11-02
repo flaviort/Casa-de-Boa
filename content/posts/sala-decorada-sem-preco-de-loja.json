@@ -1,0 +1,69 @@
+{
+	"slug": "sala-decorada-sem-preco-de-loja",
+	"postId": "a82c0526-c863-461a-afbc-13b4ddf97c30",
+	"publishAt": "2026-11-06T21:00:00-03:00",
+	"title": "Olhei a etiqueta na loja de decoração e voltei pra casa",
+	"seoTitle": "Achados da Shopee pra decorar a sala gastando pouco",
+	"excerpt": "Cadeira lua, tapete felpudo e luminária de pérola: achados da Shopee pra decorar a sala sem preço de loja.",
+	"room": "sala",
+	"cover": {
+		"url": "/posts/sala-decorada-sem-preco-de-loja.jpg",
+		"alt": "Mulher de perfil numa loja de decoração segurando um vaso de cerâmica perto do rosto, com o texto da capa",
+		"width": 1080,
+		"height": 1440
+	},
+	"body": [
+		"Tem peça de loja de decoração que a gente só olha de longe, porque a etiqueta assusta. Só que a cara da sala muda com pouco: um tapete macio, uma luz baixa, uma manta jogada no sofá.",
+		"Aqui entram peças que já têm venda na Shopee e que dá pra escolher aos poucos, sem reforma e sem gastar de uma vez."
+	],
+	"products": [
+		{
+			"name": "Cadeira lua (kit com 2)",
+			"blurb": "Par de cadeiras de encosto curvo e pé de madeira, que combinam com a mesa redonda de jantar.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-81z1k-me784ton1wxt6b",
+			"url": "https://s.shopee.com.br/8KqljOJl6g"
+		},
+		{
+			"name": "Tapete felpudo",
+			"blurb": "Tapete de pelo alto em cinza mesclado, pra pisar descalça e dar outra cara ao piso.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820lb-mujb331c9og0e9",
+			"url": "https://s.shopee.com.br/3B8fZtd0wQ"
+		},
+		{
+			"name": "Mesa redonda de pé palito",
+			"blurb": "Mesinha branca de pé palito que encosta no sofá e segura o livro e a xícara.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820m6-mpie39c34e80ea",
+			"url": "https://s.shopee.com.br/4Ve3ALYHX0"
+		},
+		{
+			"name": "Manta pro sofá",
+			"blurb": "Manta clara que cobre o sofá inteiro e cai até o chão, com franjinha na ponta.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820lk-mucgh1yho6ir01",
+			"url": "https://s.shopee.com.br/5q9QknTH9R"
+		},
+		{
+			"name": "Luminária de pérola",
+			"blurb": "Concha de cerâmica que abre e mostra a pérola acesa, com luz baixinha.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-7r98o-m6u1rze7c8yvfc",
+			"url": "https://s.shopee.com.br/1BNbCDl6rE"
+		},
+		{
+			"name": "Cabideiro de chão",
+			"blurb": "Cabideiro preto de chão que segura casaco, gorro e bolsa num canto só.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-7rdw0-mdc563ndvj7d19",
+			"url": "https://s.shopee.com.br/7fb4wAHU3w"
+		},
+		{
+			"name": "Difusor de trem",
+			"blurb": "Trem de metal envelhecido que solta névoa pelas chaminés, com luz e controle remoto.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820lu-msnh4fbhfxfq6c",
+			"url": "https://s.shopee.com.br/9APsivKurC"
+		},
+		{
+			"name": "Fruteira de dois andares",
+			"blurb": "Fruteira de metal de dois andares com alça de madeira, pra deixar a fruta à vista.",
+			"image": "https://cf.shopee.com.br/file/br-11134211-81zte-mko49067yfwi64",
+			"url": "https://s.shopee.com.br/qkknbhuUQ"
+		}
+	]
+}
