@@ -1,0 +1,69 @@
+{
+	"slug": "especial-lista-pra-black-friday-da-casa",
+	"postId": "682c9de0-028c-4a09-87e9-11d19b040d60",
+	"publishAt": "2026-11-12T21:00:00-03:00",
+	"title": "Minha lista pra Black Friday, só coisa que resolve",
+	"seoTitle": "Lista pra Black Friday: coisas grandes da casa pra comparar",
+	"excerpt": "Air fryer, panificadora, lavadora de pressão e lava-louças portátil: a lista pra acompanhar o preço até a Black Friday.",
+	"room": "especial",
+	"cover": {
+		"url": "/posts/especial-lista-pra-black-friday-da-casa.jpg",
+		"alt": "Mulher dirigindo num fim de tarde, camisa jeans e óculos na cabeça, com o texto da capa sobre a lista pra Black Friday",
+		"width": 1080,
+		"height": 1440
+	},
+	"body": [
+		"Black Friday boa é a que você já tinha na lista, sem compra por impulso. Então a lista vem antes: as coisas grandes da casa que a gente adia porque são caras, anotadas com o preço de hoje.",
+		"No dia 27 é só comparar. Se o preço baixou de verdade, compra sabendo; se não baixou, a lista continua valendo pro mês que vem."
+	],
+	"products": [
+		{
+			"name": "Mixer Philco 4 lâminas",
+			"blurb": "Mixer Philco de 4 lâminas e 500 W, 2 em 1 com copo e processador.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-82599-muwc1iu6rkshee",
+			"url": "https://s.shopee.com.br/8Kqz258aA9"
+		},
+		{
+			"name": "Air fryer Philco 4,4 L",
+			"blurb": "Air fryer Philco Redstone de 4,4 litros e 1500 W, com cesto fundo pra família.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-8258m-mudia6o4imtk24",
+			"url": "https://s.shopee.com.br/8AXYpm9Yoc"
+		},
+		{
+			"name": "Panificadora Mondial",
+			"blurb": "Panificadora Mondial que mistura, sova e assa o pão de forma em casa.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-8258a-mr7uqspy0jd110",
+			"url": "https://s.shopee.com.br/1W0etWZ4sd"
+		},
+		{
+			"name": "Lavadora de alta pressão WAP",
+			"blurb": "Lavadora de alta pressão WAP WL 1800, com mangueira e pistola.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-825az-mg6w6fzws5qi64",
+			"url": "https://s.shopee.com.br/6AmUS6CQn1"
+		},
+		{
+			"name": "Lava-louças portátil Praxis",
+			"blurb": "Lava-louças portátil Praxis, que fica na bancada e lava a louça do dia sem instalação.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-7r98o-m850ox58do8h8b",
+			"url": "https://s.shopee.com.br/qky6IbTi3"
+		},
+		{
+			"name": "Power bank 10000 mAh",
+			"blurb": "Power bank de 10000 mAh, pequeno o bastante pra ficar na bolsa.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-81zvk-mik9ovwbhszk62",
+			"url": "https://s.shopee.com.br/3qOZfoUWe4"
+		},
+		{
+			"name": "Dispensador de detergente",
+			"blurb": "Dispensador automático de detergente de 550 ml, com sensor: põe a mão embaixo e ele solta.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-821e1-mh81xls57ito3f",
+			"url": "https://s.shopee.com.br/4fxgfLRLxP"
+		},
+		{
+			"name": "Polidor elétrico de taças",
+			"blurb": "Polidor elétrico de taças e copos, com duas escovas que giram e tiram as marcas do vidro.",
+			"image": "https://cf.shopee.com.br/file/cn-11134207-820l4-mq4hxtxa95348c",
+			"url": "https://s.shopee.com.br/4VeGT2S3Zd"
+		}
+	]
+}
