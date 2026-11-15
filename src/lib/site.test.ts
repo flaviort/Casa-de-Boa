@@ -15,7 +15,7 @@ describe('absoluteUrl', () => {
 describe('SITE', () => {
 	it('carries the brand names used for SEO', () => {
 		expect(SITE.name).toBe('Casa de Boa')
-		expect(SITE.alternateNames).toEqual(['casadeboa', 'casadeboa.br'])
+		expect(SITE.alternateNames).toEqual(['casadeboa', 'casadeboa.br', 'casadeboa_br'])
 	})
 })
 

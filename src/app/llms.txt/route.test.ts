@@ -25,6 +25,6 @@ describe('GET /llms.txt', () => {
 		expect(text.startsWith('# Casa de Boa')).toBe(true)
 		expect(text).toContain('[Achados pra cozinha](https://casadeboa.com.br/posts/cozinha-ok)')
 		expect(text).not.toContain('quarto-futuro')
-		expect(text).toContain('https://www.instagram.com/casadeboa.br/')
+		expect(text).toContain('https://www.instagram.com/casadeboa_br/')
 	})
 })

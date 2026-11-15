@@ -9,8 +9,8 @@ const NETWORKS = [
 	{
 		href: SITE.socials.instagram,
 		name: 'Instagram',
-		handle: '@casadeboa.br',
-		text: 'Carrosséis e Reels com os achados da semana. Comenta a palavra do post e recebe os links no direct.',
+		handle: '@casadeboa_br',
+		text: 'Carrosséis e Reels com os achados da semana. Os links de cada produto ficam na legenda e aqui no site.',
 		Icon: InstagramIcon
 	},
 	{

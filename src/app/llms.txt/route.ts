@@ -12,7 +12,7 @@ export async function GET() {
 
 > ${SITE.tagline}. A Casa de Boa seleciona achados da Shopee para a casa: só entram produtos campeões de vendas e bem avaliados. Cada post é um cômodo (cozinha, quarto, sala, lavanderia, organização) e traz a lista dos produtos com o link de cada um na Shopee.
 
-Os mesmos achados saem primeiro no Instagram, no TikTok e no Facebook (@casadeboa.br).
+Os mesmos achados saem primeiro no Instagram (@casadeboa_br), no TikTok (@casadeboa.br) e no Facebook (Casa de Boa).
 
 ## Posts
 
