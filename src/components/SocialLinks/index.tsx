@@ -1,5 +1,5 @@
 // components
-import { ArrowUpRightIcon, FacebookIcon, InstagramIcon, TiktokIcon } from '@/components/Icons'
+import { ArrowUpRightIcon, FacebookIcon, InstagramIcon, TiktokIcon, YoutubeIcon } from '@/components/Icons'
 
 // utils
 import { SITE } from '@/lib/site'
@@ -7,7 +7,8 @@ import { SITE } from '@/lib/site'
 const SOCIALS = [
 	{ href: SITE.socials.instagram, label: 'Instagram', Icon: InstagramIcon },
 	{ href: SITE.socials.tiktok, label: 'TikTok', Icon: TiktokIcon },
-	{ href: SITE.socials.facebook, label: 'Facebook', Icon: FacebookIcon }
+	{ href: SITE.socials.facebook, label: 'Facebook', Icon: FacebookIcon },
+	{ href: SITE.socials.youtube, label: 'YouTube', Icon: YoutubeIcon }
 ]
 
 export default function SocialLinks() {

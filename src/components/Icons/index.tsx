@@ -26,6 +26,14 @@ export function FacebookIcon({ className }: Props) {
 	)
 }
 
+export function YoutubeIcon({ className }: Props) {
+	return (
+		<svg viewBox='0 0 24 24' fill='currentColor' className={className} aria-hidden='true'>
+			<path d='M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4a2.5 2.5 0 0 0-1.8 1.8C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM10 15V9l5.2 3L10 15Z' />
+		</svg>
+	)
+}
+
 export function ArrowUpRightIcon({ className }: Props) {
 	return (
 		<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' className={className} aria-hidden='true'>

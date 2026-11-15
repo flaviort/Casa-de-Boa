@@ -1,5 +1,5 @@
 // components
-import { ArrowUpRightIcon, FacebookIcon, InstagramIcon, TiktokIcon } from '@/components/Icons'
+import { ArrowUpRightIcon, FacebookIcon, InstagramIcon, TiktokIcon, YoutubeIcon } from '@/components/Icons'
 import Reveal from '@/components/Reveal'
 
 // utils
@@ -26,12 +26,19 @@ const NETWORKS = [
 		handle: 'Casa de Boa',
 		text: 'Os mesmos posts, com o link de cada produto direto na legenda.',
 		Icon: FacebookIcon
+	},
+	{
+		href: SITE.socials.youtube,
+		name: 'YouTube',
+		handle: '@casadeboa',
+		text: 'Os achados em Shorts, um cômodo por vídeo, com os links na descrição.',
+		Icon: YoutubeIcon
 	}
 ]
 
 export default function SocialCards() {
 	return (
-		<Reveal className='grid gap-4 sm:grid-cols-3'>
+		<Reveal className='grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
 			{NETWORKS.map(({ href, name, handle, text, Icon }) => (
 				<a key={name} href={href} target='_blank' rel='noopener' className='group flex flex-col rounded-lg bg-cartao p-5 transition-colors hover:bg-areia'>
 					<span className='flex items-center justify-between'>
