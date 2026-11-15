@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const room = resolve((await params).room)
 	if (!room) return {}
 	const { title } = copy(room)
-	return pageMetadata({ title, description: `${title}: os campeões de vendas e bem avaliados, com o link de cada um. Seleção da Casa de Boa.`, path: `/categoria/${room}` })
+	return pageMetadata({ title, description: `${title}: achadinhos da Shopee com o link de cada um. Seleção da Casa de Boa.`, path: `/categoria/${room}` })
 }
 
 export default async function RoomPage({ params }: Props) {

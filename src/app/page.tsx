@@ -17,7 +17,7 @@ export default function Home() {
 		<Container className='pt-12 pb-20 lg:pt-20'>
 			<PageHero
 				eyebrow='Achados da Shopee pra casa'
-				lead='Só entra aqui o que é campeão de vendas e bem avaliado. Cada post traz o link de tudo, direto na Shopee.'
+				lead='Achadinhos que você nem sabia que precisava, com preços que dão vontade de comprar. Cada post traz o link de tudo, direto na Shopee.'
 			>
 				Casa de Boa: a casa <Script>de boa</Script>, sem gastar muito
 			</PageHero>

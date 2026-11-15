@@ -8,7 +8,7 @@ export default function manifest(): MetadataRoute.Manifest {
 	return {
 		name: `${SITE.name} | ${SITE.tagline}`,
 		short_name: SITE.name,
-		description: 'Achados da Shopee pra casa, escolhidos a dedo: campeões de vendas e bem avaliados.',
+		description: 'Achadinhos da Shopee pra casa que você nem sabia que precisava.',
 		start_url: '/',
 		display: 'standalone',
 		background_color: '#F4F2F0',

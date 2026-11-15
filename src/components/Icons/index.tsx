@@ -34,6 +34,14 @@ export function YoutubeIcon({ className }: Props) {
 	)
 }
 
+export function XIcon({ className }: Props) {
+	return (
+		<svg viewBox='0 0 24 24' fill='currentColor' className={className} aria-hidden='true'>
+			<path d='M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.2-8.3L2 3h6.4l4.4 5.8L17.8 3Zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5Z' />
+		</svg>
+	)
+}
+
 export function ArrowUpRightIcon({ className }: Props) {
 	return (
 		<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' className={className} aria-hidden='true'>

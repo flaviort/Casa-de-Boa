@@ -23,7 +23,7 @@ const SIDEBAR_SCRIPT = `try{if(localStorage.getItem('cdb-sidebar')==='collapsed'
 export const revalidate = 3600
 
 export const metadata: Metadata = {
-	...pageMetadata({ description: 'Achados da Shopee pra casa, escolhidos a dedo: campeões de vendas e bem avaliados, com o link de cada um.', path: '/' }),
+	...pageMetadata({ description: 'Achadinhos da Shopee pra casa que você nem sabia que precisava, com preço bom e o link de cada um.', path: '/' }),
 	metadataBase: new URL(SITE.url),
 	title: { default: `${SITE.name} | ${SITE.tagline}`, template: `%s | ${SITE.name}` },
 	applicationName: SITE.name,

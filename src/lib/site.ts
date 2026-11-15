@@ -9,11 +9,11 @@ export const SITE = {
 		instagram: 'https://www.instagram.com/casadeboa_br/',
 		tiktok: 'https://www.tiktok.com/@casadeboa.br',
 		facebook: 'https://www.facebook.com/casadeboa.br',
-		youtube: 'https://www.youtube.com/@casadeboa'
+		youtube: 'https://www.youtube.com/@casadeboa',
+		x: 'https://x.com/casadeboa'
 	},
 	// reserved profiles: not in the menu, but listed in sameAs so Google ties them to the brand
 	otherProfiles: [
-		'https://x.com/casadeboa',
 		'https://br.pinterest.com/casadeboa/',
 		'https://kwai-video.com/u/@casadeboa.br/eHMC4RCJ',
 		'https://www.snapchat.com/@casadeboa.br'
