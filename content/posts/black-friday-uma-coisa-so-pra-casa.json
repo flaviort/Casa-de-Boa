@@ -1,0 +1,57 @@
+{
+	"slug": "black-friday-uma-coisa-so-pra-casa",
+	"postId": "cb96731d-fd0b-4647-994d-bb2e0c5ff093",
+	"publishAt": "2026-11-20T21:00:00-03:00",
+	"title": "Se for comprar uma coisa só pra casa na Black Friday",
+	"seoTitle": "Achados da Shopee pra casa na Black Friday",
+	"excerpt": "Alexa, panela de arroz elétrica, chaleira de vidro, ventilador portátil, câmera instantânea e banquetas: ideias da Shopee pra Black Friday.",
+	"room": "sala",
+	"cover": {
+		"url": "/posts/black-friday-uma-coisa-so-pra-casa.jpg",
+		"alt": "Mulher de costas entrando em casa com duas sacolas de compras de papel, com o texto da capa sobre a Black Friday",
+		"width": 1080,
+		"height": 1440
+	},
+	"body": [
+		"Black Friday dá vontade de encher o carrinho, mas a compra que mais rende é aquela uma coisa que a casa está pedindo faz tempo. Vale pensar no que você usa todo dia e no que facilitaria a rotina.",
+		"A lista tem um pouco de tudo: cozinha, sala e até um presente pra guardar memória. A Black Friday é dia 27: dá pra deixar no carrinho e comparar o preço até lá."
+	],
+	"products": [
+		{
+			"name": "Alexa Echo Dot 5ª Geração Com Som Original Speaker - Já no Brasil com Envio Imed",
+			"blurb": "Echo Dot de 5ª geração, a caixinha de som redonda com Alexa e anel de luz embaixo.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-7r98o-m7x4betswm41d0",
+			"url": "https://s.shopee.com.br/2qWByKBnCz"
+		},
+		{
+			"name": "Panela De Arroz Elétrica Midi Itatiaia 1,5L 500W 127V",
+			"blurb": "Panela de arroz elétrica Itatiaia de 1,5 L em inox, com tampa de vidro: faz o arroz sem ocupar o fogão.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-7rcbw-m6fx43nkal3o41",
+			"url": "https://s.shopee.com.br/2LZvNPDcyR"
+		},
+		{
+			"name": "Chaleira De Vidro Tampa Bambu Premium 1Litro Bule Com Infusor",
+			"blurb": "Chaleira de vidro de 1 litro com tampa de bambu e infusor, boa pra chá com fruta e ervas.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-7r98o-m962jvyy5urm35",
+			"url": "https://s.shopee.com.br/906pJejVLv"
+		},
+		{
+			"name": "Ventilador De Resfriamento Portátil Dobrável USB De 5Velocidades mini ventilador",
+			"blurb": "Ventilador portátil que dobra, fica em pé na mesa, carrega por USB e tem 5 velocidades com visor da bateria.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820md-mlfpu5no7jt0b3",
+			"url": "https://s.shopee.com.br/9KjfiGmdRQ"
+		},
+		{
+			"name": "Fujifilm Câmera Instantânea Instax Mini 13",
+			"blurb": "Câmera instantânea Instax da Fujifilm, que imprime a foto na hora.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820mc-ms9uvecbytc42e",
+			"url": "https://s.shopee.com.br/7fbRjCtSfa"
+		},
+		{
+			"name": "JOGO 3 BANQUETAS BANCO PARA BANCADA ALTA 4 ARAMES LANÇAMENTO COZINHA AREA",
+			"blurb": "Jogo de 3 banquetas altas com encosto, assento estofado e aro de apoio pros pés, pra bancada da cozinha.",
+			"image": "https://cf.shopee.com.br/file/br-11134211-81z1k-mepzp78198g3ed",
+			"url": "https://s.shopee.com.br/4fxq9h009h"
+		}
+	]
+}
