@@ -32,3 +32,10 @@ export function getRelatedPosts(post: Post, count = 3, now = new Date()): Post[]
 	const others = getVisiblePosts(now).filter(p => p.slug !== post.slug)
 	return [...others.filter(p => p.room === post.room), ...others.filter(p => p.room !== post.room)].slice(0, count)
 }
+
+const SHOPEE_FILE = /^https:\/\/cf\.shopee\.com\.br\/file\/[\w-]+$/
+
+// A Shopee já serve a miniatura de 320 px com o sufixo _tn, então ela não passa pelo otimizador do Vercel (cada uma contava transformação).
+export function productThumb(image: string): { src: string; unoptimized?: true } {
+	return SHOPEE_FILE.test(image) ? { src: `${image}_tn`, unoptimized: true } : { src: image }
+}

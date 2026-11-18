@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { ArrowUpRightIcon } from '@/components/Icons'
 
 // utils
-import type { Product } from '@/lib/posts'
+import { productThumb, type Product } from '@/lib/posts'
 
 export default function ProductList({ products }: { products: Product[] }) {
 	return (
@@ -13,7 +13,7 @@ export default function ProductList({ products }: { products: Product[] }) {
 			{products.map((product, index) => (
 				<li key={product.url} className='flex gap-4 rounded-lg bg-cartao p-3 sm:items-center'>
 					<div className='relative size-24 shrink-0 overflow-hidden rounded bg-areia sm:size-28'>
-						<Image src={product.image} alt='' fill sizes='112px' className='object-cover' />
+						<Image {...productThumb(product.image)} alt='' fill sizes='112px' className='object-cover' />
 					</div>
 					<div className='flex min-w-0 flex-1 flex-col gap-3 sm:flex-row sm:items-center sm:gap-6'>
 						<div className='min-w-0 flex-1'>

@@ -86,3 +86,14 @@ describe('getRelatedPosts', () => {
 		expect(posts.getRelatedPosts(post, 1, now)).toHaveLength(1)
 	})
 })
+
+describe('productThumb', () => {
+	it('usa a miniatura da própria Shopee sem otimizar', async () => {
+		const { productThumb } = await import('./index')
+		expect(productThumb('https://cf.shopee.com.br/file/br-11134207-7r98o-lm7i8jl0k6wm07')).toEqual({ src: 'https://cf.shopee.com.br/file/br-11134207-7r98o-lm7i8jl0k6wm07_tn', unoptimized: true })
+	})
+	it('deixa outras imagens com o otimizador', async () => {
+		const { productThumb } = await import('./index')
+		expect(productThumb('/posts/capa.jpg')).toEqual({ src: '/posts/capa.jpg' })
+	})
+})

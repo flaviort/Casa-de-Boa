@@ -15,7 +15,7 @@ import ProductList from '@/components/ProductList'
 import Reveal from '@/components/Reveal'
 
 // utils
-import { getRelatedPosts, getVisiblePost, getVisiblePosts } from '@/lib/posts'
+import { getRelatedPosts, getVisiblePost, getVisiblePosts, productThumb } from '@/lib/posts'
 import { ROOM_LABELS } from '@/lib/rooms'
 import { articleJsonLd, breadcrumbJsonLd, itemListJsonLd, postMetadata } from '@/lib/seo'
 
@@ -65,7 +65,7 @@ export default async function PostPage({ params }: Props) {
 							<ul className='flex -space-x-2' aria-hidden='true'>
 								{post.products.slice(0, 5).map(product => (
 									<li key={product.url} className='relative size-11 overflow-hidden rounded-lg border-2 border-areia bg-cartao'>
-										<Image src={product.image} alt='' fill sizes='44px' className='object-cover' />
+										<Image {...productThumb(product.image)} alt='' fill sizes='44px' className='object-cover' />
 									</li>
 								))}
 							</ul>

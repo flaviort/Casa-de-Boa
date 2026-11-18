@@ -35,7 +35,9 @@ const nextConfig = {
 			{ protocol: 'https', hostname: '*.susercontent.com' },
 			{ protocol: 'https', hostname: 'cf.shopee.com.br' }
 		],
-		formats: ['image/avif', 'image/webp']
+		// Só WebP e cache de 31 dias: as capas saem do site com max-age=0 e o padrão de 4 h fazia o Vercel transformar de novo.
+		formats: ['image/webp'],
+		minimumCacheTTL: 2678400
 	},
 	async headers() {
 		return [
