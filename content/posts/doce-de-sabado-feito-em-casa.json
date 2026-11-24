@@ -1,0 +1,69 @@
+{
+	"slug": "doce-de-sabado-feito-em-casa",
+	"postId": "1e106b46-5935-4f74-9f4e-57d2c8b1db49",
+	"publishAt": "2026-11-28T21:00:00-03:00",
+	"title": "Sábado é dia de fazer doce em casa",
+	"seoTitle": "Achados da Shopee pra fazer doce em casa",
+	"excerpt": "Forminhas de cupcake, forma de pudim, fonte de chocolate e máquina de algodão doce: achados da Shopee pra sobremesa do fim de semana.",
+	"room": "cozinha",
+	"cover": {
+		"url": "/posts/doce-de-sabado-feito-em-casa.jpg",
+		"alt": "Mulher na mesa do café da manhã escrevendo num caderno, com croissant e caneca, e o texto da capa sobre fazer doce no sábado",
+		"width": 1080,
+		"height": 1440
+	},
+	"body": [
+		"Fazer doce no sábado é programa: bolo vulcão pra sobremesa, brigadeiro pra beliscar e algodão doce pra quem tem criança em casa. Com as forminhas certas sai mais rápido, e a cozinha não vira uma bagunça.",
+		"Aqui entram achados da Shopee pra isso, da forminha de silicone que dispensa papel à placa que deixa todos os docinhos do mesmo tamanho."
+	],
+	"products": [
+		{
+			"name": "Forminhas de cupcake",
+			"blurb": "Forminhas redondas de silicone de 7 cm pra cupcake e bolinho, coloridas, que desenformam sem papel.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-7raun-mazslsbkof7n2b",
+			"url": "https://s.shopee.com.br/8pnaYlIv4f"
+		},
+		{
+			"name": "Forminhas de bolo vulcão",
+			"blurb": "Kit de forminhas de alumínio de 300 ml pra bolo vulcão, mini bolo e petit gâteau.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-7r98o-mbgzsjor6aqq45",
+			"url": "https://s.shopee.com.br/4fy1b6dJnO"
+		},
+		{
+			"name": "Forma de pudim quadrada",
+			"blurb": "Forma quadrada de alumínio com furo central, 20 por 7 cm, pra pudim e bolo.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820m6-mnyacu2xh05c2f",
+			"url": "https://s.shopee.com.br/2BGgcViIbF"
+		},
+		{
+			"name": "Placa de docinhos",
+			"blurb": "Placa porcionadora com 55 furos pra brigadeiro e beijinho: enche, passa a espátula e os docinhos saem do mesmo tamanho.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-81ztc-mjst5w20zsp21e",
+			"url": "https://s.shopee.com.br/1gKQ1akL6O"
+		},
+		{
+			"name": "Saco de confeitar com bicos",
+			"blurb": "Kit de 24 peças com saco de confeitar de silicone reutilizável e bicos pra decorar bolo e cupcake.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-82596-muylbrmon1my63",
+			"url": "https://s.shopee.com.br/80ETZEQYmA"
+		},
+		{
+			"name": "Espátula de inox pra bolo",
+			"blurb": "Espátula reta de aço inox pra bolo, de 26 ou 32 cm, que espalha chantilly e recheio e alisa a cobertura.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820ly-mpk3vka92ps3ce",
+			"url": "https://s.shopee.com.br/8pnaYlIv5g"
+		},
+		{
+			"name": "Fonte de chocolate",
+			"blurb": "Mini fonte de chocolate elétrica de 3 andares: o chocolate derretido cai em cascata pra molhar fruta e marshmallow.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-82634-mju5llmdv4zod2",
+			"url": "https://s.shopee.com.br/2BGgcVmptC"
+		},
+		{
+			"name": "Máquina de algodão doce",
+			"blurb": "Máquina de algodão doce portátil: põe o açúcar no centro, gira o palito e o algodão doce se forma em poucos minutos.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-7rd5b-lvsvlx9r1cct30",
+			"url": "https://s.shopee.com.br/30pnc2jfC1"
+		}
+	]
+}
