@@ -1,0 +1,69 @@
+{
+	"slug": "bebidas-pra-quem-vive-de-cafe",
+	"postId": "3a0ce9de-de02-403f-bc29-2d76bd0536d6",
+	"publishAt": "2026-11-24T21:00:00-03:00",
+	"title": "Achados pra quem vive de café e garrafinha",
+	"seoTitle": "Achados da Shopee pra café, chá e água gelada",
+	"excerpt": "Copo térmico, coador de inox, cafeteira italiana, moedor manual e forma de gelo com tampa: achados da Shopee pra beber bem em casa e na rua.",
+	"room": "cozinha",
+	"cover": {
+		"url": "/posts/bebidas-pra-quem-vive-de-cafe.jpg",
+		"alt": "Mulher rindo andando numa rua arborizada com um copo de café gelado, com o texto da capa sobre café e garrafinha",
+		"width": 1080,
+		"height": 1440
+	},
+	"body": [
+		"Tem gente que não sai de casa sem o café e a garrafinha de água. Com o copo certo o gelo dura a tarde toda, e com um coador de inox e uma cafeteira italiana o café de casa fica melhor que o da padaria.",
+		"Aqui entram achados da Shopee pra isso, do moedor manual que mói o grão na hora ao copo de silicone que dobra e vai na bolsa."
+	],
+	"products": [
+		{
+			"name": "Copo térmico com canudo",
+			"blurb": "Copo térmico de inox com tampa, alça e canudo, em 600 ml ou 1,2 litro, que segura o gelo do café e da água por horas.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820l7-msdnnzmmtpfp25",
+			"url": "https://s.shopee.com.br/8AXtlZBqlU"
+		},
+		{
+			"name": "Coador de café inox",
+			"blurb": "Coador de café de inox tamanho 103 com pegador de silicone, reutilizável, que dispensa o filtro de papel.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-7r98o-m3gpzu9ozvaw87",
+			"url": "https://s.shopee.com.br/AKcOLXzL5s"
+		},
+		{
+			"name": "Garrafa térmica Watersy",
+			"blurb": "Garrafa térmica de inox de 500 ml que mantém a água gelada por até 48 horas, boa pra academia e pro dia a dia.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820lb-msl12l6zbq4k5a",
+			"url": "https://s.shopee.com.br/2VtX19X4y3"
+		},
+		{
+			"name": "Forma de gelo com tampa (kit 4)",
+			"blurb": "Kit com 4 formas de gelo de 14 cubos, com fundo de silicone que solta o gelo fácil e tampa rígida pra empilhar no freezer.",
+			"image": "https://cf.shopee.com.br/file/br-11134207-820lj-mso8lagjmdc625",
+			"url": "https://s.shopee.com.br/9Kjr9i7POb"
+		},
+		{
+			"name": "Cafeteira italiana",
+			"blurb": "Cafeteira italiana de inox de 12 xícaras, que faz café forte direto no fogão.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-82585-mvvzjtl000sl83",
+			"url": "https://s.shopee.com.br/8AXtlZFuCX"
+		},
+		{
+			"name": "Moedor de café manual",
+			"blurb": "Moedor de café manual de inox com mó de cerâmica e regulagem do fino ao grosso, pra moer o grão na hora.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-8262f-mkwr7zjyesxu26",
+			"url": "https://s.shopee.com.br/50arzkSNCo"
+		},
+		{
+			"name": "Garrafa de vidro pra chá",
+			"blurb": "Garrafa portátil de vidro com compartimento separado pro chá, que deixa a infusão pronta pra levar.",
+			"image": "https://cf.shopee.com.br/file/cn-11134207-820l4-mulxiyydiuipd4",
+			"url": "https://s.shopee.com.br/1W0zpJfHlA"
+		},
+		{
+			"name": "Copo dobrável de silicone",
+			"blurb": "Copo dobrável de silicone de 180 ml com tampa, que fecha achatado e cabe na bolsa.",
+			"image": "https://cf.shopee.com.br/file/sg-11134201-825ax-mrzzmvyovv9hba",
+			"url": "https://s.shopee.com.br/7pv3MxHWDS"
+		}
+	]
+}
